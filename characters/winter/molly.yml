@@ -1,0 +1,96 @@
+---
+name: Gon
+type: Hobgoblin Merchant
+concept: Perverted Slave Trader
+description: "Gon is a medium build hobgoblin, roughly five feet tall with grayish-green skin. He has vivid yellow eyes with a piercing, manipulative gaze. He always dreses well in strange looking but nicely pressed suits, usually made of velvet or silk. He is infatuated with human and changeling women (in a perverted and masochistic way). He collectes pieces of beautiful women (like hair, teeth, fingernails, etc). He is involved in the underground trade of young women as slaves."
+wyrd: 5
+size: 4
+intelligence: 2
+wits: 2
+resolve: 2
+strength: 3
+dexterity: 3
+stamina: 1
+presence: 3
+manipulation: 3
+composure: 2
+academics: 0
+computer: 0
+crafts: 2
+investigation: 0
+medicine: 0
+occult: 0
+politics: 2
+science: 0
+athletics: 1
+brawl: 0
+drive: 0
+firearms: 4
+larceny: 0
+stealth: 1
+survival: 1
+weaponry: 0
+animal_ken: 0
+empathy: 0
+expression: 0
+intimidation: 3
+persuasion: 2
+socialize: 2
+streetwise: 2
+subterfuge: 2
+specialties:
+  crafts: Clothing
+  firearms: Remington M870 12-Gauge Shotgun
+  firearms: Barnett Ghost 410 CRT Crossbow
+  survival: Hedge
+equipment:
+  gold_pocket_watch: A token that grants him access to the black market.
+firearms:
+  remington_m870_12-gauge_shotgun:
+    damage: L
+    range: 20/40/80
+    special_rules: "9 Again"
+  barnett_ghost_410_crt_crossbow:
+    damage: L
+    range: 40/80/160
+    special_rules: "silver bolts"
+merits:
+  danger_sense:
+    - 2
+  fast_reflexes:
+    - 2
+  fresh_start:
+    - 1
+  market_sense:
+    - 1
+  allies:
+    - 3
+    - Nethan
+  market_familiarity:
+    - 1
+    - Lacey Fair
+  slave:
+    - 3
+    - trained
+    - Marissa
+  goblin_merchant:
+    - 3
+    - The Lacey Fair
+  market_stall:
+    - 4
+    - Tent at the Lacey Fair
+    - "Gon's Fashions"
+  wholesale_wares:
+    - 1
+    - "High quality clothing"
+
+
+
+
+
+
+
+
+
+
+
