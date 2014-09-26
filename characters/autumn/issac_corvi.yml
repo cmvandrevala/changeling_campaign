@@ -1,0 +1,80 @@
+---
+name: Issac "The Crow" Corvi
+player: Cyrus Vandrevala
+virtue: Temperance
+vice: Sloth
+concept: Reclusive Scholar
+seeming: Darkling
+kith: Antiquarian
+court: Autumn
+description: "A large, intimidating figure that is cloaked in a black plague suit.  His bird mask is accented with two, vivid red rubies that give the world a warped appearance."
+wyrd: 4
+clarity: 7
+size: 5
+intelligence: 4
+wits: 2
+resolve: 2
+strength: 1
+dexterity: 2
+stamina: 3
+presence: 2
+manipulation: 3
+composure: 2
+academics: 4
+computer: 2
+crafts: 0
+investigation: 1
+medicine: 1
+occult: 3
+politics: 0
+science: 3
+athletics: 0
+brawl: 0
+drive: 0
+firearms: 0
+larceny: 1
+stealth: 2
+survival: 1
+weaponry: 0
+animal_ken: 4
+empathy: 0
+expression: 1
+intimidation: 2
+persuasion: 0
+socialize: 0
+streetwise: 0
+subterfuge: 0
+specialties:
+  occult: Superstitions
+  stealth: Crows
+  animal_ken: Crows
+  intimidation: Crows
+equipment:
+  reinforced_clothing: (1/0)
+firearms:
+contracts:
+  dream:
+    - 4
+  fleeting_autumn:
+    - 4
+merits:
+  mantle:
+    - 4
+	- Autumn
+  encylopedic_knowledge:
+    - 4
+  eidetic_memory:
+    - 2
+flaws:
+  - Aloof
+
+
+
+
+
+
+
+
+
+
+
