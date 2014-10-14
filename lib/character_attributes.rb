@@ -1,4 +1,4 @@
-class Attributes
+class CharacterAttributes
 
   attr_accessor :intelligence, :wits, :resolve, :strength, :dexterity
   attr_accessor :stamina, :presence, :manipulation, :composure

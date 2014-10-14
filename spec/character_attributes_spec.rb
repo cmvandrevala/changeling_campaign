@@ -1,11 +1,11 @@
-require "attributes"
+require "character_attributes"
 
-describe Attributes do
+describe CharacterAttributes do
 
   context "default attributes" do
 
     before(:each) do
-      @attributes = Attributes.new
+      @attributes = CharacterAttributes.new
     end
 
     it "has a base intelligence of one" do
@@ -52,7 +52,7 @@ describe Attributes do
       params = { intelligence: 2,  strength: 3,   presence: 1,
                  wits: 5,          dexterity: 1,  manipulation: 7,
                  resolve: 2,       stamina: 4,    composure: 4 }
-      @attributes = Attributes.new(params)
+      @attributes = CharacterAttributes.new(params)
     end
 
     it "intelligence can be initialized" do
@@ -96,7 +96,7 @@ describe Attributes do
   context "changing attributes" do
 
     before(:each) do
-      @attributes = Attributes.new
+      @attributes = CharacterAttributes.new
     end
 
     it "changes intelligence" do
