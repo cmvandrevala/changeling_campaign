@@ -60,21 +60,10 @@ contracts:
 merits:
   mantle:
     - 4
-	- Autumn
+	  - Autumn
   encylopedic_knowledge:
     - 4
   eidetic_memory:
     - 2
 flaws:
   - Aloof
-
-
-
-
-
-
-
-
-
-
-
