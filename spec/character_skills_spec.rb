@@ -348,4 +348,49 @@ describe CharacterSkills do
 
   end
 
+  context "initializing specializations" do
+
+    it "initializes a single specialization" do
+      params = { :academics => [1, "Reading"] }
+      skills = CharacterSkills.new(params)
+      expect(skills.specializations).to eql({academics: ["Reading"]})
+    end
+
+    it "initializes multiple specializations" do
+      params = { academics: [1, "Light"], drive: [2, "cars"]}
+      skills = CharacterSkills.new(params)
+      expect(skills.specializations).to eql({academics: ["Light"], drive: ["cars"]})
+    end
+
+    it "initializes multiple specializations to the same skill" do
+      params = { academics: [1, "Light", "Sounds"]}
+      skills = CharacterSkills.new(params)
+      expect(skills.specializations).to eql({academics: ["Light", "Sounds"]})
+    end
+
+  end
+
+  context "adding a specialization" do
+
+    it "adds a new specialization in a new skill" do
+      skills = CharacterSkills.new
+      skills.add_specialization("Academics", "Flight")
+      expect(skills.specializations).to eql({academics: ["Flight"]})
+    end
+
+    it "properly handles underscores" do
+      skills = CharacterSkills.new
+      skills.add_specialization("Animal Ken", "Great Dane")
+      expect(skills.specializations).to eql({animal_ken: ["Great Dane"]})
+    end
+
+    it "adds a new specialization in an existing skill" do
+      params = { academics: [1, "Knowledge"] }
+      skills = CharacterSkills.new(params)
+      skills.add_specialization("academics", "Superstitions")
+      expect(skills.specializations).to eql({academics: ["Knowledge", "Superstitions"]})      
+    end
+
+  end
+
 end
