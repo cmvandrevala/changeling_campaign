@@ -2,23 +2,21 @@ module Character
 
   class Contracts
 
+    attr_reader :contracts_list
+
     def initialize
-      @contracts = []
+      @contracts_list = []
     end
 
-    def list_all
-      @contracts
-    end
-
-    def add_contract(name, description)
-      @contracts << {name => description} if contract_not_present?(name)
+    def new_contract(name, description)
+      @contracts_list << {name => description} if not_present?(name)
     end
 
     private
 
-    def contract_not_present?(name)
-      @contracts.each do |character_contract|
-        k,v = character_contract.first
+    def not_present?(name)
+      @contracts_list.each do |current_contract|
+        k,v = current_contract.first
         return false if name == k
       end
       return true

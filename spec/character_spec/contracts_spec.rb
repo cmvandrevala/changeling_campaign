@@ -9,18 +9,18 @@ module Character
     end
 
     it "starts off with no contracts" do
-      expect(@contracts.list_all).to eq []
+      expect(@contracts.contracts_list).to eq []
     end
 
     it "can add a contract" do
-      @contracts.add_contract("Some Contract", "Some Description")
-      expect(@contracts.list_all).to eq [{"Some Contract" => "Some Description"}]
+      @contracts.new_contract("Some Contract", "Some Description")
+      expect(@contracts.contracts_list).to eq [{"Some Contract" => "Some Description"}]
     end
 
     it "does not allow duplicates" do
-      @contracts.add_contract("Some Contract", "Some Description")
-      @contracts.add_contract("Some Contract", "Some Other Description")
-      expect(@contracts.list_all).to eq [{"Some Contract" => "Some Description"}]
+      @contracts.new_contract("Some Contract", "Some Description")
+      @contracts.new_contract("Some Contract", "Some Other Description")
+      expect(@contracts.contracts_list).to eq [{"Some Contract" => "Some Description"}]
     end
 
   end

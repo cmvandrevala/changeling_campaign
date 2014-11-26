@@ -2,8 +2,9 @@ module Character
 
   class Attributes
 
-    attr_accessor :intelligence, :wits, :resolve, :strength, :dexterity
-    attr_accessor :stamina, :presence, :manipulation, :composure
+    attr_accessor :intelligence, :wits, :resolve
+    attr_accessor :strength, :dexterity, :stamina
+    attr_accessor :presence, :manipulation, :composure
 
     def initialize(params = {})
       attributes = default_attributes.merge(params)
