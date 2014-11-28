@@ -8,7 +8,7 @@ GEM
     ffi (1.9.6)
     ffi (1.9.6-java)
     formatador (0.2.5)
-    guard (2.6.1)
+    guard (2.9.1)
       formatador (>= 0.2.4)
       listen (~> 2.7)
       lumberjack (~> 1.0)
@@ -19,7 +19,7 @@ GEM
       rspec (>= 2.14, < 4.0)
     hitimes (1.2.2)
     hitimes (1.2.2-java)
-    listen (2.7.11)
+    listen (2.8.3)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -63,3 +63,4 @@ PLATFORMS
 DEPENDENCIES
   guard-rspec
   rspec
+  rspec-mocks
