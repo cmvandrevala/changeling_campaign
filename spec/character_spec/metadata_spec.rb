@@ -7,15 +7,15 @@ module Character
     context "default metadata" do
 
       before(:each) do
-        @metadata = Metadata.new("Loomy")
+        @metadata = Metadata.new
       end
 
-      it "has a unique name" do
-        expect(@metadata.name).to eql "Loomy"
+      it "has a name of NPC" do
+        expect(@metadata.name).to eql "NPC"
       end
 
-      it "has a player of NPC" do
-        expect(@metadata.player).to eql "NPC"
+      it "has a player of Cyrus Vandrevala" do
+        expect(@metadata.player).to eql "Cyrus Vandrevala"
       end
 
       it "has a chronicle of 'The Road to Hell'" do
@@ -30,8 +30,8 @@ module Character
         expect(@metadata.vice).to eql nil
       end
 
-      it "has a concept of nil" do
-        expect(@metadata.concept).to eql nil
+      it "has a concept of NPC" do
+        expect(@metadata.concept).to eql "NPC"
       end
 
       it "has a seeming of nil" do
@@ -51,7 +51,7 @@ module Character
     context "initializing metadata" do
 
       before(:each) do
-        params = {name: "Looni", player: "Robert", chronicle: "rejected", virtue: "Happy", vice: "Sad", concept: "Poop", seeming: "Darkling", kith: "guy", court: "Summer"}
+        params = {name: "Looni", player: "Robert", chronicle: "Rejected", virtue: "Happy", vice: "Sad", concept: "Poop", seeming: "Darkling", kith: "guy", court: "Summer"}
         @metadata = Metadata.new(params)
       end
 
@@ -63,8 +63,8 @@ module Character
         expect(@metadata.player).to eql "Robert"
       end
 
-      it "chronicle cannot be initialized" do
-        expect(@metadata.chronicle).to eql "The Road to Hell"
+      it "chronicle can be initialized" do
+        expect(@metadata.chronicle).to eql "Rejected"
       end
 
       it "virtue can be initialized" do
