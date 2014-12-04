@@ -1,6 +1,7 @@
-<h1>Events Index</h1>
+<h1>Master Timeline</h1>
 
 <% @events.each do |event| %>
   <p><%= event.title %> - <%= event.description %> - <%= event.date %></p>
+  <p><%= event.characters[0].name %></p>
 
 <% end %>

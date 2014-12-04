@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
+  resources :characters
   resources :events
 
   # The priority is based upon order of creation: first created -> highest priority.

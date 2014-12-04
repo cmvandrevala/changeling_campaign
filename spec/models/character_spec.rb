@@ -14,4 +14,13 @@ describe Character, :type => :model do
 
   end
 
+  describe "associations" do
+
+    it "should have and belong to many characters" do
+      t = Character.reflect_on_association(:events)
+      expect(t.macro).to eq :has_and_belongs_to_many
+    end
+
+  end
+
 end

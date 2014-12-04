@@ -10,8 +10,8 @@ describe "Events" do
       visit events_path(event)
     end
 
-    it "has the header Events Index" do
-      expect(page).to have_content "Events Index"
+    it "has the header Master Timeline" do
+      expect(page).to have_content "Master Timeline"
     end
 
     it "has the the title of the event" do
@@ -24,6 +24,10 @@ describe "Events" do
 
     it "has the the date of the event" do
       expect(page).to have_content "2001-02-03"
+    end
+
+    it "has the the associated characters of the event" do
+      expect(page).to have_content "Bob"
     end
 
   end
