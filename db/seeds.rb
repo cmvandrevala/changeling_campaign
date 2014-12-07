@@ -7,13 +7,19 @@ Character.create({name: "Emory"})
 Character.create({name: "The Winter Monarch"})
 Character.create({name: "The Emerald Queen"})
 Character.create({name: "The Summer King"})
+Character.create({name: "The Jester"})
 Character.create({name: "Kat"})
 Character.create({name: "War"})
+Character.create({name: "Vellum"})
 Character.create({name: "Bart"})
+Character.create({name: "Johan"})
 Character.create({name: "Satori"})
+Character.create({name: "Issac Corvi"})
 Character.create({name: "Valtor"})
 Character.create({name: "Matthew"})
-Character.create({name: "Tremere"})
+Character.create({name: "Dr. Yuri Krolm"})
+Character.create({name: "Molly Severson"})
+Character.create({name: "The Zookeeper"})
 
 Event.create({title: "The Fall of Saigon", date: Date.new(1975,4,30), description: "The fall of Saigon marks the end of the Vietnam War. Halfdan Ragnorsson finally captures Chikiri in her hiding place in Vietnam and brings her to America."})
 Event.last.characters << Character.where(name: "Chikiri").take
@@ -23,18 +29,18 @@ Event.create({title: "The Runic Prison", date: Date.new(1985,3,12), description:
 Event.last.characters << Character.where(name: "Chikiri").take
 Event.last.characters << Character.where(name: "Halfdan Ragnorsson").take
 
-Event.create({title: "Discovering the Runes", date: Date.new(1990,2,16), description: "The Tremere of the city discover the runes and begin to explore them. They find and raid the Library and over the course of the next decade learn many of the secrets of the city. Of course, they don't tell anyone."})
-Event.last.characters << Character.where(name: "Tremere").take
+Event.create({title: "Discovering the Runes", date: Date.new(1990,2,16), description: "The Dr. Yuri Krolm of the city discover the runes and begin to explore them. They find and raid the Library and over the course of the next decade learn many of the secrets of the city. Of course, they don't tell anyone."})
+Event.last.characters << Character.where(name: "Dr. Yuri Krolm").take
 
-Event.create({title: "Trapping the Fairy", date: Date.new(1990,3,30), description: "The Tremere summon a fairy and trick it into a bell jar using their new found knowledge. They also begin a variety of other poorly advised experiments in their endless quest for power."})
-Event.last.characters << Character.where(name: "Tremere").take
+Event.create({title: "Trapping the Fairy", date: Date.new(1990,3,30), description: "The Dr. Yuri Krolm summon a fairy and trick it into a bell jar using their new found knowledge. They also begin a variety of other poorly advised experiments in their endless quest for power."})
+Event.last.characters << Character.where(name: "Dr. Yuri Krolm").take
 
-Event.create({title: "The Encounter With Chikiri", date: Date.new(2000,2,22), description: "The Tremere stumble across Chikiri and don't know what to make of her."})
-Event.last.characters << Character.where(name: "Tremere").take
+Event.create({title: "The Encounter With Chikiri", date: Date.new(2000,2,22), description: "The Dr. Yuri Krolm stumble across Chikiri and don't know what to make of her."})
+Event.last.characters << Character.where(name: "Dr. Yuri Krolm").take
 Event.last.characters << Character.where(name: "Chikiri").take
 
-Event.create({title: "The Prison", date: Date.new(2000,4,2), description: "The Tremere have amassed enough power to create the mass paradox generator, and construction begins. The device builds on Chikiri's prison and uses her as a focus."})
-Event.last.characters << Character.where(name: "Tremere").take
+Event.create({title: "The Prison", date: Date.new(2000,4,2), description: "The Dr. Yuri Krolm have amassed enough power to create the mass paradox generator, and construction begins. The device builds on Chikiri's prison and uses her as a focus."})
+Event.last.characters << Character.where(name: "Dr. Yuri Krolm").take
 Event.last.characters << Character.where(name: "Chikiri").take
 
 Event.create({title: "Pursuing War", date: Date.new(2001,9,11), description: "Halfdan finds the last rider of the apocalypse, War. He pursues her to Iraq. This is his second time stalking her in the middle eastern country."})
@@ -128,7 +134,67 @@ Event.last.characters << Character.where(name: "Aravinda").take
 Event.last.characters << Character.where(name: "Bart").take
 Event.last.characters << Character.where(name: "Emory").take
 
+Event.create({title: "Issac's Birth", date: Date.new(1965,1,28), description: "An autistic baby boy is born to Christopher and Lucinda Corvi. They vow to make sure that Issac lives a happy and healthy life."})
+Event.last.characters << Character.where(name: "Issac Corvi").take
 
+Event.create({title: "A Smart Cookie", date: Date.new(1969,1,1), description: "From a young age, Issac showed a remarkable genius in art. He is classified as a savant."})
+Event.last.characters << Character.where(name: "Issac Corvi").take
 
+Event.create({title: "A New School", date: Date.new(1975,8,1), description: "Issac. He is enrolled in a private school where he can."})
+Event.last.characters << Character.where(name: "Issac Corvi").take
 
+Event.create({title: "Early Graduate", date: Date.new(1979,5,30), description: "Issac graduates high school at the age of 14. He is accepted to the University of Indiana to study chemistry."})
+Event.last.characters << Character.where(name: "Issac Corvi").take
+
+Event.create({title: "Issac's Abduction", date: Date.new(1980,11,26), description: "Over Thanksgiving vacation, he is kidnapped by the fae Vellum."})
+Event.last.characters << Character.where(name: "Issac Corvi").take
+Event.last.characters << Character.where(name: "Vellum").take
+
+Event.create({title: "Issac's Escape", date: Date.new(1980,11,27), description: "Although Issac has only been in Arcadia for one day, it seems like an eternity. He has made an unlikely alliance with crows - the allies of the Fae. He escapes in a flourish of feathers."})
+Event.last.characters << Character.where(name: "Issac Corvi").take
+Event.last.characters << Character.where(name: "Vellum").take
+
+Event.create({title: "The August Quartet", date: Date.new(1987,9,23), description: "The four primary leaders establish the freehold. They agree to willingly pass power with the coming and going of the seasons."})
+Event.last.characters << Character.where(name: "Issac Corvi").take
+Event.last.characters << Character.where(name: "The Winter Monarch").take
+Event.last.characters << Character.where(name: "The Emerald Queen").take
+Event.last.characters << Character.where(name: "The Summer King").take
+
+Event.create({title: "The Split", date: Date.new(1992,9,23), description: "On the fifth anniversary of the formation of the Freehold, Issac Corvi resigns. He has become sick of the way that the leaders abuse their subjects and steps down."})
+Event.last.characters << Character.where(name: "Issac Corvi").take
+Event.last.characters << Character.where(name: "The Winter Monarch").take
+Event.last.characters << Character.where(name: "The Emerald Queen").take
+Event.last.characters << Character.where(name: "The Summer King").take
+
+Event.create({title: "The New Autumn", date: Date.new(1992,9,24), description: "The other members of the freehold are in a panic. They need to find a new leader of autumn. The Jester steps up to take the position - one day late."})
+Event.last.characters << Character.where(name: "The Jester").take
+Event.last.characters << Character.where(name: "The Winter Monarch").take
+Event.last.characters << Character.where(name: "The Emerald Queen").take
+Event.last.characters << Character.where(name: "The Summer King").take
+
+Event.create({title: "The House Arrest", date: Date.new(1992,9,25), description: "The first act of The Jester is to put Issac Corvi under house arrest. The freehold agrees that he abandoned them in their time of need, so he needs to be punished. However, the rulers do not want to kill or banish him. He is one of their oldest friends and he knows more about the world than anybody else."})
+Event.last.characters << Character.where(name: "Issac Corvi").take
+Event.last.characters << Character.where(name: "The Winter Monarch").take
+Event.last.characters << Character.where(name: "The Emerald Queen").take
+Event.last.characters << Character.where(name: "The Summer King").take
+Event.last.characters << Character.where(name: "The Jester").take
+
+Event.create({title: "Molly's Birth", date: Date.new(1989,8,19), description: "A beautiful baby girl is born to Richard and Margaret Severson."})
+Event.last.characters << Character.where(name: "Molly Severson").take
+
+Event.create({title: "Molly's Abduction", date: Date.new(2009,6,30), description: "Molly is abducted by The Zookeeper. Her once beautiful features are warped into a scaly, lizard-like appearance. She spends the next four years in captivity as one of his animals on display."})
+Event.last.characters << Character.where(name: "Molly Severson").take
+Event.last.characters << Character.where(name: "The Zookeeper").take
+
+Event.create({title: "Molly's Escape", date: Date.new(2013,5,12), description: "While The Zookeeper is cleaning out the cages of his exhibits, Molly realizes that he left her enclosure wide open. While his back is turned, she makes a run for it and escapes Arcadia. However, she becomes lost in the Hedge. Reluctantly, she has to depend on her animalistic nature to survive. To her horror, she thrives in the Hedge when she falls back on her lizard brain."})
+Event.last.characters << Character.where(name: "Molly Severson").take
+Event.last.characters << Character.where(name: "The Zookeeper").take
+
+Event.create({title: "Molly's Arrival", date: Date.new(2013,5,19), description: "After spending a week in the Hedge, Molly finally reaches the Freehold. She meets The Winter Monarch who counsels her through her past. She vows never to leave the Freehold out of fear of becoming an animal. She also begins wearing garments to cover her appearance."})
+Event.last.characters << Character.where(name: "Molly Severson").take
+Event.last.characters << Character.where(name: "The Winter Monarch").take
+
+Event.create({title: "Johan's Arrival", date: Date.new(2014,2,1), description: "Molly treats Johan for minor wounds after he arrives in the Freehold."})
+Event.last.characters << Character.where(name: "Molly Severson").take
+Event.last.characters << Character.where(name: "Johan").take
 

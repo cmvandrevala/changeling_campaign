@@ -1,5 +1,19 @@
 <h1>Characters</h1>
 
-<% @characters.each do |character| %>
-  <p><%= character.name %></p>
-<% end %>
+<table border="1px" style="width:100%">
+  <thead>
+    <tr>
+      <th>Character Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @characters.each do |character| %>
+      <tr>
+        <td><%= character.name %></td>
+		<td><%= link_to "Show", character_path(character) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
