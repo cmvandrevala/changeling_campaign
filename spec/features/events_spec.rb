@@ -30,6 +30,11 @@ describe "Events" do
       expect(page).to have_content "Bob"
     end
 
+    xit "has a link to the character page" do
+      click_link "Bob"
+      expect(page).to have_title "Bob"
+    end
+
   end
 
 end

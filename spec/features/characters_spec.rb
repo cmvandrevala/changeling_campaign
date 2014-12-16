@@ -10,6 +10,10 @@ describe "Characters" do
       visit characters_path(character)
     end
 
+    xit "has the title Character Index" do
+      expect(page).to have_title "Character Index"
+    end
+
     it "has the header Characters" do
       expect(page).to have_content "Characters"
     end
