@@ -1,4 +1,4 @@
-puts "===> Molly Severson"
+puts "===> Molly Severson's Backstory"
 
 Event.create({
   title: "A Pretty Child",

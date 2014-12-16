@@ -1,4 +1,4 @@
-puts "===> Issac Corvi"
+puts "===> Issac Corvi's Backstory"
 
 Event.create({
   title: "An Autistic Child",

@@ -5,9 +5,9 @@ load './db/characters.rb'
 puts
 puts "Seeding Events"
 load './db/events/adi_kapur_backstory.rb'
+load './db/events/history_of_the_august_quartet.rb'
 load './db/events/issac_corvi_backstory.rb'
 load './db/events/molly_severson_backstory.rb'
-load './db/events/the_august_quartet.rb'
 
 Event.create({title: "Ruling the Briars", date: Date.new(1983,3,21), description: "The Jester has amassed enough support to become the sheriff of the briars. He begins his rule."})
 Event.last.characters << Character.where(name: "The Jester").take
@@ -142,26 +142,6 @@ Event.last.characters << Character.where(name: "Lumi Satala").take
 Event.last.characters << Character.where(name: "The Gentle Grandmother").take
 Event.last.characters << Character.where(name: "The Game Maker").take
 
-Event.create({title: "A Paired Clutch", date: Date.new(1900,1,1), description: "Nethan and Gon hatch on the first day of the new century. Their eggs were from different mothers, but a nasty hob stole the eggs to raise as her own. Neithan is born first."})
-Event.last.characters << Character.where(name: "Neithan").take
-Event.last.characters << Character.where(name: "Gon").take
-
-Event.create({title: "The Egg-Scape", date: Date.new(1900,1,8), description: "Nethan and Gon plan an escape from their captor. While Nethan distracts the Hob, Gon beats it to death with a rock. They make their way off through the Hedge together."})
-Event.last.characters << Character.where(name: "Neithan").take
-Event.last.characters << Character.where(name: "Gon").take
-
-Event.create({title: "The Passage", date: Date.new(1900,1,9), description: "Nethan and Gon wander the Hedge for 40 years. Their life is tough."})
-Event.last.characters << Character.where(name: "Neithan").take
-Event.last.characters << Character.where(name: "Gon").take
-
-Event.create({title: "Turn Your Life Around", date: Date.new(1940,1,24), description: "Nethan cries out in rage, cursing his awful life. He wants a way out. The Problem Solver visits him and offers him a stall in the Lacey Fair. He wholeheartedly agrees, with the condition that his friend can come along too. She makes him indespensible - he can weave and interpret the future."})
-Event.last.characters << Character.where(name: "Neithan").take
-Event.last.characters << Character.where(name: "The Problem Solver").take
-
-Event.create({title: "The Millionaires", date: Date.new(1940,1,25), description: "Neithan and Gon come across a Goblin market. They somehow get a stall by luck."})
-Event.last.characters << Character.where(name: "Neithan").take
-Event.last.characters << Character.where(name: "The Problem Solver").take
-
 Event.create({title: "A Chosen Child", date: Date.new(1907,11,11), description: "A baby is born."})
 Event.last.characters << Character.where(name: "The Emerald Queen").take
 
@@ -197,14 +177,5 @@ Event.last.characters << Character.where(name: "The Gentle Grandmother").take
 Event.create({title: "Escape", date: Date.new(1965,4,9), description: "He fights his way out of the yard."})
 Event.last.characters << Character.where(name: "The Summer King").take
 Event.last.characters << Character.where(name: "The Gentle Grandmother").take
-
-Event.create({title: "Born", date: Date.new(1918,9,11), description: "A baby is born."})
-Event.last.characters << Character.where(name: "The Winter Monarch").take
-
-Event.create({title: "Abducted", date: Date.new(1925,9,11), description: "Abducted on seventh birthday."})
-Event.last.characters << Character.where(name: "The Winter Monarch").take
-
-Event.create({title: "Escape", date: Date.new(1961,10,2), description: "Escapes."})
-Event.last.characters << Character.where(name: "The Winter Monarch").take
 
 

@@ -6,6 +6,10 @@ Character.create({name: "Molly Severson"})
 puts "===> True Fae"
 puts "===> Hobs"
 
+
+Character.create({name: "Aldric Durant"})
+Character.create({name: "Persephone Floros"})
+
 Character.create({name: "Chikiri Komieji"})
 Character.create({name: "Halfdan Ragnorsson"})
 Character.create({name: "Lumi Satala"})
@@ -37,6 +41,5 @@ Character.create({name: "The False Deity"})
 Character.create({name: "Ali"})
 Character.create({name: "Oriana"})
 Character.create({name: "Francis Ayers"})
-Character.create({name: "Aldric Durant"})
 Character.create({name: "Fredrick Ackerley"})
 Character.create({name: "Elizabeth Ward"})
