@@ -6,10 +6,11 @@ Character.create({name: "Molly Severson"})
 puts "===> True Fae"
 puts "===> Hobs"
 
-
+Character.create({name: "Jillian Bordeaux"})
+Character.create({name: "Charles Harding"})
+Character.create({name: "The Kidnapped Child"})
 Character.create({name: "Aldric Durant"})
 Character.create({name: "Persephone Floros"})
-
 Character.create({name: "Chikiri Komieji"})
 Character.create({name: "Halfdan Ragnorsson"})
 Character.create({name: "Lumi Satala"})
@@ -25,10 +26,10 @@ Character.create({name: "Kat"})
 Character.create({name: "War"})
 Character.create({name: "Vellum the Studious"})
 Character.create({name: "Bart"})
-Character.create({name: "Johan"})
+Character.create({name: "Johannas"})
 Character.create({name: "Satori Komieji"})
 Character.create({name: "Valtor Alton"})
-Character.create({name: "Matthew Satori Komiejias"})
+Character.create({name: "Matthew Satorius"})
 Character.create({name: "Dr. Yuri Krolm"})
 Character.create({name: "The Zookeeper"})
 Character.create({name: "Lavender the Pixie"})

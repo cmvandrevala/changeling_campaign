@@ -18,16 +18,16 @@ Event.last.characters << Character.where(name: "Aldric Durant").take
 
 Event.create({
   title: "To the New World",
-  date: Date.new(1919,3,8),
-  description: "Aldric and his parents manage to secure a spot on a boat heading to the United States.",
+  date: Date.new(1920,3,8),
+  description: "Aldric and his parents manage to secure a spot on a boat heading to the United States. Their savings are all but depleted.",
   location: "London, England"
 })
 Event.last.characters << Character.where(name: "Aldric Durant").take
 
 Event.create({
   title: "Brave New World",
-  date: Date.new(1919,3,14),
-  description: "Aldric and his parents arrive in New York City. They find housing in a poor area.",
+  date: Date.new(1920,3,14),
+  description: "Aldric and his parents arrive in New York City. They find housing in a predominantly Irish and poor neighborhood.",
   location: "New York City, United States"
 })
 Event.last.characters << Character.where(name: "Aldric Durant").take

@@ -111,26 +111,9 @@ Event.last.characters << Character.where(name: "Molly Severson").take
 Event.create({
   title: "Johan's Arrival",
   date: Date.new(2014,2,1),
-  description: "Johan arrives in the Freehold and immediately sees Francis at the gates. Francis accompanies him to the hospital where Molly treats him for minor wounds.",
+  description: "Johannas arrives in the Freehold and immediately sees Francis at the gates. Francis accompanies him to the hospital where Molly treats him for minor wounds.",
   location: "The North Star"
 })
 Event.last.characters << Character.where(name: "Molly Severson").take
 Event.last.characters << Character.where(name: "Francis Ayers").take
-Event.last.characters << Character.where(name: "Johan").take
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Event.last.characters << Character.where(name: "Johannas").take
