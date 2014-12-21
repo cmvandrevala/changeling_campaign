@@ -1,14 +1,18 @@
 puts
+
+puts "Seeding Locations"
+load './db/seeds/locations/locations.rb'
+
 puts "Seeding Characters"
-load './db/characters.rb'
+load './db/seeds/characters/characters.rb'
 
 puts
 puts "Seeding Events"
-load './db/events/adi_kapur_backstory.rb'
-load './db/events/history_of_the_august_quartet.rb'
-load './db/events/issac_corvi_backstory.rb'
-load './db/events/loki_and_aravinda_destroy_the_engine.rb'
-load './db/events/molly_severson_backstory.rb'
+load './db/seeds/events/adi_kapur_backstory.rb'
+load './db/seeds/events/history_of_the_august_quartet.rb'
+load './db/seeds/events/issac_corvi_backstory.rb'
+load './db/seeds/events/loki_and_aravinda_destroy_the_engine.rb'
+load './db/seeds/events/molly_severson_backstory.rb'
 #
 # Event.create({title: "Ruling the Briars", date: Date.new(1983,3,21), description: "The Jester has amassed enough support to become the sheriff of the briars. He begins his rule."})
 # Event.last.characters << Character.where(name: "The Jester").take

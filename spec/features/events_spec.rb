@@ -10,29 +10,28 @@ describe "Events" do
       visit events_path(event)
     end
 
-    it "has the header Master Timeline" do
-      expect(page).to have_content "Master Timeline"
+    it "has the title Event Index" do
+      expect(page).to have_title "Event Index"
     end
 
-    it "has the the title of the event" do
-      expect(page).to have_content "Title"
+    it "has the header 'Event Index'" do
+      expect(page).to have_content "Event Index"
     end
 
-    it "has the the description of the event" do
-      expect(page).to have_content "Some long description."
+  end
+
+  describe "#show" do
+
+    before(:each) do
+      visit event_path(event)
     end
 
-    it "has the the date of the event" do
-      expect(page).to have_content "2001-02-03"
+    it "has the title Event" do
+      expect(page).to have_title "Event"
     end
 
-    it "has the the associated characters of the event" do
-      expect(page).to have_content "Bob"
-    end
-
-    xit "has a link to the character page" do
-      click_link "Bob"
-      expect(page).to have_title "Bob"
+    it "has the header 'Event'" do
+      expect(page).to have_content "Event"
     end
 
   end

@@ -1,17 +1,5 @@
+<% provide(:title, 'Event')%>
 
-  <tbody>
-    <% @events.each do |event| %>
-      <tr>
-        <td><%= event.date %></td>
-		<td><%= event.title %></td>
-		<td><%= event.description %></td>
-		<td>
-			<% event.characters.each do |character| %>
-			<%= character.name %><br />
-			<% end %>
-		</td>
-		<td><%= link_to "Show", event_path(event) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<h1>Event</h1>
+
+<p><%= @event.name %></p>
