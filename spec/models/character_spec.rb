@@ -16,6 +16,10 @@ describe Character, :type => :model do
       expect(@character).to respond_to :name
     end
 
+    it "has a species" do
+      expect(@character).to respond_to :species
+    end
+
   end
 
   describe "validations" do
