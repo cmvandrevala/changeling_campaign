@@ -1,7 +1,7 @@
 puts "===> Changelings"
-Character.create({name: "Adi Kapur"})
-Character.create({name: "Issac Corvi"})
-Character.create({name: "Molly Severson"})
+Character.create({name: "Adi Kapur", species: "Changeling"})
+Character.create({name: "Issac Corvi", species: "Changeling"})
+Character.create({name: "Molly Severson", species: "Changeling"})
 
 puts "===> True Fae"
 puts "===> Hobs"
