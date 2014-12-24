@@ -47,6 +47,11 @@ describe Event, :type => :model do
 
   describe "associations" do
 
+    it "should have and belong to many story arcs" do
+      t = Event.reflect_on_association(:story_arcs)
+      expect(t.macro).to eq :has_and_belongs_to_many
+    end
+
     it "should have and belong to many characters" do
       t = Event.reflect_on_association(:characters)
       expect(t.macro).to eq :has_and_belongs_to_many
