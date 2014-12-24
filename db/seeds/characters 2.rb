@@ -1,10 +1,4 @@
-puts "===> Changelings"
-Character.create({name: "Adi Kapur", species: "Changeling"})
-Character.create({name: "Issac Corvi", species: "Changeling"})
-Character.create({name: "Molly Severson", species: "Changeling"})
 
-puts "===> True Fae"
-puts "===> Hobs"
 
 Character.create({name: "Jillian Bordeaux"})
 Character.create({name: "Charles Harding"})

@@ -4,7 +4,7 @@ puts "Seeding Locations"
 load './db/seeds/locations/locations.rb'
 
 puts "Seeding Characters"
-load './db/seeds/characters/characters.rb'
+load './db/seeds/characters/changelings/adi_kapur.rb'
 
 puts
 puts "Seeding Events"

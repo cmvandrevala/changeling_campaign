@@ -1,4 +1,4 @@
-puts "===> New York City"
+puts "===> United States"
 
 Location.create({
   name: "Lower East Side",
@@ -13,14 +13,35 @@ Location.create({
 })
 
 Location.create({name: "", description: "", address: "Chicago, USA"})
-Location.create({name: "Rajendra Nagar Slum", description: "", address: "Bangalore, India"})
+
+puts "===> India"
+
+Location.create({
+  name: "Rajendra Nagar Slum",
+  description: "One of the largest slums in India.",
+  address: "Bangalore, India"
+})
 
 
 puts "===> The Hedge"
 
-Location.create({name: "The North Star", description: "", address: "The Hedge"})
-Location.create({name: "The Lacey Fair", description: "", address: "The Hedge"})
-Location.create({name: "The Briars", description: "", address: "The Hedge"})
+Location.create({
+  name: "The North Star",
+  description: "A freehold formed by four wandering changelings. The main freehold of Anansesem city.",
+  address: "The Hedge"
+})
+
+Location.create({
+  name: "The Lacey Fair",
+  description: "A large goblin market.",
+  address: "The Hedge"
+})
+
+Location.create({
+  name: "The Briars",
+  description: "A wild community of changelings living deep within the Hedge.",
+  address: "The Hedge"
+})
 
 Location.create({
   name: "Adi's Palace",

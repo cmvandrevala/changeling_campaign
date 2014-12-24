@@ -11,10 +11,55 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141223000734) do
+ActiveRecord::Schema.define(version: 20141224063139) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "character_attributes", force: true do |t|
+    t.integer  "intelligence"
+    t.integer  "wits"
+    t.integer  "resolve"
+    t.integer  "strength"
+    t.integer  "dexterity"
+    t.integer  "stamina"
+    t.integer  "presence"
+    t.integer  "manipulation"
+    t.integer  "composure"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "character_id"
+  end
+
+  create_table "character_skills", force: true do |t|
+    t.integer  "academics"
+    t.integer  "computer"
+    t.integer  "crafts"
+    t.integer  "investigation"
+    t.integer  "medicine"
+    t.integer  "occult"
+    t.integer  "politics"
+    t.integer  "science"
+    t.integer  "athletics"
+    t.integer  "brawl"
+    t.integer  "drive"
+    t.integer  "firearms"
+    t.integer  "larceny"
+    t.integer  "stealth"
+    t.integer  "survival"
+    t.integer  "weaponry"
+    t.integer  "animal_ken"
+    t.integer  "empathy"
+    t.integer  "expression"
+    t.integer  "intimidation"
+    t.integer  "persuasion"
+    t.integer  "socialize"
+    t.integer  "streetwise"
+    t.integer  "subterfuge"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "character_id"
+  end
 
   create_table "characters", force: true do |t|
     t.string   "name"

@@ -48,6 +48,16 @@ describe Character, :type => :model do
       expect(t.macro).to eq :has_and_belongs_to_many
     end
 
+    it "should have one attribute" do
+      t = Character.reflect_on_association(:character_attribute)
+      expect(t.macro).to eq :has_one
+    end
+
+    it "should have one skill" do
+      t = Character.reflect_on_association(:character_skill)
+      expect(t.macro).to eq :has_one
+    end
+
   end
 
 end
