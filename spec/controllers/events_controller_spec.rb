@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe EventsController, :type => :controller do
 
-  let(:event)     { FactoryGirl.create(:event) }
+  let(:event)         { FactoryGirl.create(:event) }
   let(:valid_session) { {} }
 
   describe "GET index" do
