@@ -1,19 +1,19 @@
-puts "===> Loki"
+puts "===> Adi Kapur (Fetch)"
 
 Character.create({
-  name: "Loki",
-  species: "God"
+  name: "Adi Kapur (Fetch)",
+  species: "Fetch"
 })
 Character.last.character_attribute = CharacterAttribute.new({
-  intelligence: 1,
-  wits: 1,
-  resolve: 1,
-  strength: 1,
-  dexterity: 1,
-  stamina: 1,
-  presence: 1,
+  intelligence: 2,
+  wits: 3,
+  resolve: 3,
+  strength: 3,
+  dexterity: 3,
+  stamina: 3,
+  presence: 2,
   manipulation: 1,
-  composure: 1
+  composure: 2
 })
 Character.last.character_skill = CharacterSkill.new({
   academics: 1,

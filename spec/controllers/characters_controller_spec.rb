@@ -26,11 +26,6 @@ describe CharactersController, :type => :controller do
       expect(assigns(:character)).to eq(character)
     end
 
-    xit "assigns a list of character events to @character_events" do
-      get :show, {:id => character.to_param}, valid_session
-      expect(assigns(:character_events)).to eq()
-    end
-
     it "renders the show template" do
       get :show, {:id => character.to_param}, valid_session
       expect(response).to render_template("show")

@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20141224214717) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "character_attributes", force: true do |t|
+  create_table "character_attributes", force: :cascade do |t|
     t.integer  "intelligence"
     t.integer  "wits"
     t.integer  "resolve"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20141224214717) do
     t.integer  "character_id"
   end
 
-  create_table "character_skills", force: true do |t|
+  create_table "character_skills", force: :cascade do |t|
     t.integer  "academics"
     t.integer  "computer"
     t.integer  "crafts"
@@ -61,19 +61,19 @@ ActiveRecord::Schema.define(version: 20141224214717) do
     t.integer  "character_id"
   end
 
-  create_table "characters", force: true do |t|
+  create_table "characters", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "species"
   end
 
-  create_table "characters_events", force: true do |t|
+  create_table "characters_events", force: :cascade do |t|
     t.integer "character_id"
     t.integer "event_id"
   end
 
-  create_table "events", force: true do |t|
+  create_table "events", force: :cascade do |t|
     t.string   "name"
     t.date     "date"
     t.text     "description"
@@ -82,12 +82,12 @@ ActiveRecord::Schema.define(version: 20141224214717) do
     t.integer  "location_id"
   end
 
-  create_table "events_story_arcs", force: true do |t|
+  create_table "events_story_arcs", force: :cascade do |t|
     t.integer "event_id"
     t.integer "story_arc_id"
   end
 
-  create_table "locations", force: true do |t|
+  create_table "locations", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
     t.datetime "created_at"
@@ -95,7 +95,7 @@ ActiveRecord::Schema.define(version: 20141224214717) do
     t.string   "address"
   end
 
-  create_table "story_arcs", force: true do |t|
+  create_table "story_arcs", force: :cascade do |t|
     t.string   "name"
     t.string   "storyteller"
     t.string   "description"

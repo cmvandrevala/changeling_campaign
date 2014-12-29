@@ -18,6 +18,38 @@ describe "Events" do
       expect(page).to have_content "Event Index"
     end
 
+    it "has the table header 'Date'" do
+      expect(page).to have_content "Date"
+    end
+
+    it "has the table header 'Name'" do
+      expect(page).to have_content "Name"
+    end
+
+    it "has the table header 'Location'" do
+      expect(page).to have_content "Location"
+    end
+
+    it "has the table header 'Characters'" do
+      expect(page).to have_content "Characters"
+    end
+
+    it "has the date" do
+      expect(page).to have_content Date.new(2001,2,3)
+    end
+
+    it "has the name" do
+      expect(page).to have_content "Name"
+    end
+
+    it "has the location name" do
+      expect(page).to have_content "Chicago"
+    end
+
+    xit "has the associated character names" do
+      expect(page).to have_content "Bob"
+    end
+
   end
 
   describe "#show" do

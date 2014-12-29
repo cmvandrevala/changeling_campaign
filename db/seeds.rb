@@ -1,12 +1,28 @@
+folder = Rails.root.join('db', 'seeds')
+
+puts
+puts ">> Seeding Database"
+
+puts
+puts "Seeding Locations"
+Dir.glob("#{folder}/locations/**/*.rb").each { |f| load f }
+
+puts
+puts "Seeding Characters"
+Dir.glob("#{folder}/characters/**/*.rb").each { |f| load f }
+
+puts
+puts "Seeding Events"
+Dir.glob("#{folder}/events/**/*.rb").each { |f| load f }
+
+puts
+puts ">> Database Successfully Seeded"
+puts ">> Enjoy Your Game"
 puts
 
 # Event.create({title: "Ruling the Briars", date: Date.new(1983,3,21), description: "The Jester has amassed enough support to become the sheriff of the briars. He begins his rule."})
 # Event.last.characters << Character.where(name: "The Jester").take
 # Event.last.characters << Character.where(name: "The Problem Solver").take
-#
-# Event.create({title: "The Fall of Saigon", date: Date.new(1975,4,30), description: "The fall of Saigon marks the end of the Vietnam War. Halfdan Ragnorsson finally captures Chikiri Komieji in her hiding place in Vietnam and brings her to America."})
-# Event.last.characters << Character.where(name: "Chikiri Komieji").take
-# Event.last.characters << Character.where(name: "Halfdan Ragnorsson").take
 #
 # Event.create({title: "The Runic Prison", date: Date.new(1985,3,12), description: "Halfdan uses ancient Hebrew runes that he discovered in Anansesem as a prison for Chikiri Komieji. These runes will one day form the foundation of the Tremiere Chantry and the Mass Paradox generator."})
 # Event.last.characters << Character.where(name: "Chikiri Komieji").take
