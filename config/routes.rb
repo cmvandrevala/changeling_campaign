@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
-  root 'static_pages#home'
+  root 'events#index'
 
   resources :characters
+
   resources :events
   resources :locations
 

@@ -4,6 +4,10 @@ describe EventsController, :type => :routing do
 
   describe "routing" do
 
+    it "routes to the homepage" do
+      expect(:get => "/").to route_to("events#index")
+    end
+
     it "routes to #index" do
       expect(:get => "/events").to route_to("events#index")
     end
