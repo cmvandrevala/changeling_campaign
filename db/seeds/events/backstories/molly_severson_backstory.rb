@@ -83,37 +83,27 @@ Event.last.characters << Character.where(name: "Molly Severson").take
 Event.last.characters << Character.where(name: "The Problem Solver").take
 Location.where(name: "The Laddered Forest").take.events << Event.last
 
-# Event.create({
-#   name: "Molly's Arrival",
-#   date: Date.new(2013,12,28),
-#   description: "Molly finally reaches the Freehold. She is immediately taken to a makeshift hospital to recover."
-# })
-# Event.last.characters << Character.where(name: "Molly Severson").take
-# Event.last.location = Location.where(name: "The North Star").take
+Event.create({
+  name: "Molly's Arrival",
+  date: Date.new(2013,12,28),
+  description: "Molly finally reaches the Freehold. She is immediately taken to a makeshift hospital to recover."
+})
+Event.last.characters << Character.where(name: "Molly Severson").take
+Location.where(name: "The Hospital").take.events << Event.last
 
-# Event.create({
-#   name: "Counseling Sessions",
-#   date: Date.new(2014,1,2),
-#   description: "Molly refuses to talk with anybody about her time in Arcadia or the Hedge. However, Aldric does manage to make a small personal connection with her and recommends that she work in the hospital to help her recovery."
-# })
-# Event.last.characters << Character.where(name: "Molly Severson").take
-# Event.last.characters << Character.where(name: "Aldric Durant").take
-# Event.last.location = Location.where(name: "The North Star").take
-#
-# Event.create({
-#   name: "New Scrubs",
-#   date: Date.new(2014,1,12),
-#   description: "Molly recovers through her work. However, her obsession with avoiding the lizard brain causes her to shut out all aspects of the Fae world (contracts, magic, etc.). She even goes as far to cover her body from head to toe in a white nurse's uniform in order to prevent anyone from seeing her shameful appearance."
-# })
-# Event.last.characters << Character.where(name: "Molly Severson").take
-# Event.last.location = Location.where(name: "The North Star").take
-#
-# Event.create({
-#   name: "Johannas' Arrival",
-#   date: Date.new(2014,2,1),
-#   description: "Johannas arrives in the Freehold and immediately sees Francis at the gates. Francis accompanies him to the hospital where Molly treats him for minor wounds."
-# })
-# Event.last.characters << Character.where(name: "Molly Severson").take
-# Event.last.characters << Character.where(name: "Francis Ayers").take
-# Event.last.characters << Character.where(name: "Johannas").take
-# Event.last.location = Location.where(name: "The North Star").take
+Event.create({
+  name: "Counseling Sessions",
+  date: Date.new(2014,1,2),
+  description: "Molly refuses to talk with anybody about her time in Arcadia or the Hedge. However, Aldric does manage to make a small personal connection with her and recommends that she work in the hospital to help her recovery."
+})
+Event.last.characters << Character.where(name: "Molly Severson").take
+Event.last.characters << Character.where(name: "Aldric Durant").take
+Location.where(name: "The Hospital").take.events << Event.last
+
+Event.create({
+  name: "New Scrubs",
+  date: Date.new(2014,1,12),
+  description: "Molly recovers through her work. However, her obsession with avoiding the lizard brain causes her to shut out all aspects of the Fae world (contracts, magic, etc.). She even goes as far to cover her body from head to toe in a white nurse's uniform in order to prevent anyone from seeing her shameful appearance."
+})
+Event.last.characters << Character.where(name: "Molly Severson").take
+Location.where(name: "The Hospital").take.events << Event.last

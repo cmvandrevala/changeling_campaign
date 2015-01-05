@@ -7,6 +7,18 @@ Location.create({
 })
 
 Location.create({
+  name: "The Brooklyn Bridge",
+  description: "A bridge.",
+  address: "New York City, USA"
+})
+
+Location.create({
+  name: "Hell's Kitchen",
+  description: "Though now gentryfying, Hell's Kitchen used to be a poor part of New York City.",
+  address: "New York City, USA"
+})
+
+Location.create({
   name: "Columbia University",
   description: "Columbia University is an American private Ivy League research university located in the Morningside Heights neighborhood of Upper Manhattan in New York City. It is the oldest institution of higher learning in the State of New York, the fifth oldest in the United States, and one of the country's nine Colonial Colleges founded before the American Revolution.",
   address: "New York City, USA"

@@ -20,7 +20,7 @@ Location.where(name: "Rajendra Nagar Slum").take.events << Event.last
 Event.create({
   name: "The Innocuous Knife",
   date: Date.new(1979,4,10),
-  description: "The False Deity places a chipped knife with a simple wooden blade under the pillow of the sleeping Adi in Arcadia. He hopes that this will keep the child strong through her brutal durance."
+  description: "The False Deity places a chipped knife with a simple wooden blade under the pillow of the sleeping Adi in Arcadia. It hopes that this will keep the child strong through her brutal durance."
 })
 Event.last.characters << Character.where(name: "Adi Kapur").take
 Event.last.characters << Character.where(name: "The False Deity").take
@@ -53,45 +53,46 @@ Event.last.characters << Character.where(name: "Adi Kapur").take
 Event.last.characters << Character.where(name: "The False Deity").take
 Location.where(name: "Arcadia").take.events << Event.last
 
-# # Event.create({
-# #   name: "The First Arrival",
-# #   date: Date.new(1985,10,5),
-# #   description: "Adi arrives in the newly formed freehold. She is the first changeling to come looking for sanctuary from the Fae."
-# # })
-# # Event.last.characters << Character.where(name: "Adi Kapur").take
-# # Event.last.location = Location.where(name: "The North Star").take
+Event.create({
+  name: "The First Arrival",
+  date: Date.new(1985,10,5),
+  description: "Adi arrives in the newly formed freehold. She is the first changeling to come to the North Star looking for sanctuary from the Fae."
+})
+Event.last.characters << Character.where(name: "Adi Kapur").take
+Location.where(name: "The Front Gates").take.events << Event.last
 
-# # Event.create({
-# #   name: "The Missing Piece",
-# #   date: Date.new(1985,12,1),
-# #   description: "Adi is restless. She feels like a part of herself is missing. Going through old tomes in the Autumn library, she finds information on fetches and begins researching them."
-# # })
-# # Event.last.characters << Character.where(name: "Adi Kapur").take
-# # Event.last.location = Location.where(name: "The North Star").take
-# #
-# # Event.create({
-# #   name: "The Fetch Obsession",
-# #   date: Date.new(1986,4,12),
-# #   description: "Adi becomes obsessed with finding her fetch and completing her soul. She begins to prepare for a journey to do just that."
-# # })
-# # Event.last.characters << Character.where(name: "Adi Kapur").take
-# # Event.last.location = Location.where(name: "The North Star").take
-#
-# Event.create({
-#   name: "Adi's Departure",
-#   date: Date.new(1987,10,27),
-#   description: "Adi leaves The North Star in order to search for her fetch and complete her soul."
-# })
-# Event.last.characters << Character.where(name: "Adi Kapur").take
-# Event.last.location = Location.where(name: "The North Star").take
-#
-# # Event.create({
-# #   name: "Her Second Half",
-# #   date: Date.new(1998,7,30),
-# #   description: "Adi finds her fetch in Anansetsam city. At first, the fetch is scared of Adi and is unwilling to believe that she comes in peace. It is only exacerbated by her awful appearance.",
-# #   location: "Anansesam City, USA"
-# # })
-# # Event.last.characters << Character.where(name: "Adi Kapur").take
+Event.create({
+  name: "The Missing Piece",
+  date: Date.new(1985,12,1),
+  description: "Adi is restless. She feels like a part of herself is missing. Going through old tomes in the Autumn library, she finds information on fetches and begins researching them."
+})
+Event.last.characters << Character.where(name: "Adi Kapur").take
+Location.where(name: "The Autumn Collection").take.events << Event.last
+
+Event.create({
+  name: "The Fetch Obsession",
+  date: Date.new(1986,4,12),
+  description: "Adi becomes obsessed with finding her fetch and completing her soul. She begins to prepare for a journey to do just that."
+})
+Event.last.characters << Character.where(name: "Adi Kapur").take
+Location.where(name: "The Autumn Collection").take.events << Event.last
+
+Event.create({
+  name: "Adi's Departure",
+  date: Date.new(1987,10,27),
+  description: "Adi leaves The North Star in order to search for her fetch and complete her soul."
+})
+Event.last.characters << Character.where(name: "Adi Kapur").take
+Location.where(name: "The Front Gates").take.events << Event.last
+
+Event.create({
+  name: "Her Second Half",
+  date: Date.new(1998,7,30),
+  description: "Adi finds her fetch in Anansesem city. At first, the fetch is scared of Adi and is unwilling to believe that she comes in peace. This idea is only exacerbated by her awful appearance."
+})
+Event.last.characters << Character.where(name: "Adi Kapur").take
+Event.last.characters << Character.where(name: "Adi Kapur (Fetch)").take
+Location.where(name: "Anansesem City Public Library").take.events << Event.last
 
 Event.create({
   name: "Trust a Friend",
@@ -105,7 +106,7 @@ Location.where(name: "The Laddered Forest").take.events << Event.last
 Event.create({
   name: "A New Home",
   date: Date.new(2004,7,30),
-  description: "Adi and her fetch move into a Hollow in the Hedge together."
+  description: "After a courting period in Anansesem city, Adi and her fetch move into a hollow in the Hedge together."
 })
 Event.last.characters << Character.where(name: "Adi Kapur").take
 Event.last.characters << Character.where(name: "Adi Kapur (Fetch)").take
@@ -121,9 +122,18 @@ Event.last.characters << Character.where(name: "Adi Kapur (Fetch)").take
 Location.where(name: "Adi's Palace").take.events << Event.last
 
 Event.create({
+  name: "Fruitless Love",
+  date: Date.new(2008,11,8),
+  description: "Adi and her fetch realize that their souls are not mending no matter what they do. They begin to argue and drift apart.",
+})
+Event.last.characters << Character.where(name: "Adi Kapur").take
+Event.last.characters << Character.where(name: "Adi Kapur (Fetch)").take
+Location.where(name: "Adi's Palace").take.events << Event.last
+
+Event.create({
   name: "A Glimmer of Hope",
   date: Date.new(2009,4,8),
-  description: "The Problem Solver visits Adi and her fetch. She tells them that they can recombine into one whole soul if they lay themselves bare to each other. True love is one of the most powerful forces in the world. Secretly, The Problem Solver knows that recombining a changeling and her fetch is a blow to The False Deity."
+  description: "The Problem Solver visits Adi and her fetch. She tells them that they can recombine into one whole soul if they embrace during the annular solar eclipse (April 29, 2014). Secretly, The Problem Solver knows that recombining a changeling and her fetch is a blow to The False Deity."
 })
 Event.last.characters << Character.where(name: "Adi Kapur").take
 Event.last.characters << Character.where(name: "Adi Kapur (Fetch)").take

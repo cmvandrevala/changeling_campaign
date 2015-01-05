@@ -23,3 +23,9 @@ Location.create({
   description: "A beautiful palace built by Adi and her fetch.",
   address: "The Hedge"
 })
+
+Location.create({
+  name: "Garret's Trod",
+  description: "One of the main trods leading out of the Freehold.",
+  address: "The Hedge"
+})
