@@ -29,3 +29,9 @@ Location.create({
   description: "One of the main trods leading out of the Freehold.",
   address: "The Hedge"
 })
+
+Location.create({
+  name: "The Briars",
+  description: "A wild tangle of thorns that houses a small population of changelings.",
+  address: "The Hedge"
+})

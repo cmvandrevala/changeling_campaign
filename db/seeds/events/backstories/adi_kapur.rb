@@ -138,4 +138,5 @@ Event.create({
 Event.last.characters << Character.where(name: "Adi Kapur").take
 Event.last.characters << Character.where(name: "Adi Kapur (Fetch)").take
 Event.last.characters << Character.where(name: "The Problem Solver").take
+Event.last.characters << Character.where(name: "The False Deity").take
 Location.where(name: "Adi's Palace").take.events << Event.last

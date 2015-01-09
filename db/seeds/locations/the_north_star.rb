@@ -13,6 +13,12 @@ Location.create({
 })
 
 Location.create({
+  name: "The Courthouse",
+  description: "The winter courthouse.",
+  address: "The North Star"
+})
+
+Location.create({
   name: "The Autumn Collection",
   description: "A great public library in the autumn court.",
   address: "The North Star"
