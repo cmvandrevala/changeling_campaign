@@ -1,7 +1,7 @@
-puts "===> The Jester"
+puts "===> The Hero"
 
 Character.create({
-  name: "The Jester",
+  name: "The Hero",
   species: "Changeling"
 })
 Character.last.character_attribute = CharacterAttribute.new({
@@ -24,20 +24,20 @@ Character.last.character_skill = CharacterSkill.new({
   occult: 2,
   politics: 2,
   science: 2,
-  athletics: 3,
-  brawl: 3,
-  drive: 3,
-  firearms: 3,
-  larceny: 3,
-  stealth: 3,
-  survival: 3,
-  weaponry: 3,
-  animal_ken: 4,
-  empathy: 4,
-  expression: 4,
-  intimidation: 4,
-  persuasion: 4,
-  socialize: 4,
-  streetwise: 4,
-  subterfuge: 4
+  athletics: 2,
+  brawl: 2,
+  drive: 2,
+  firearms: 2,
+  larceny: 2,
+  stealth: 2,
+  survival: 2,
+  weaponry: 2,
+  animal_ken: 2,
+  empathy: 2,
+  expression: 2,
+  intimidation: 2,
+  persuasion: 2,
+  socialize: 2,
+  streetwise: 2,
+  subterfuge: 2
 })
