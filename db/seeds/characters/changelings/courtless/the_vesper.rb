@@ -1,7 +1,7 @@
-puts "===> The Sheriff"
+puts "===> The Vesper"
 
 Character.create({
-  name: "The Sheriff",
+  name: "The Vesper",
   species: "Changeling"
 })
 Character.last.character_attribute = CharacterAttribute.new({
