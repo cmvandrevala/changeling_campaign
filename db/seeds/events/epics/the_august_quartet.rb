@@ -1,4 +1,4 @@
-puts "===> History of the August Quartet"
+puts "===> The August Quartet"
 
 Event.create({
   name: "The Winter Circle",
