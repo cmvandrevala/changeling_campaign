@@ -26,12 +26,18 @@ Location.create({
 
 Location.create({
   name: "Garret's Trod",
-  description: "One of the main trods leading out of the Freehold.",
+  description: "One of the main trods leading in and out of the Freehold.",
   address: "The Hedge"
 })
 
 Location.create({
   name: "The Briars",
+  description: "A wild tangle of thorns that houses a small population of changelings.",
+  address: "The Hedge"
+})
+
+Location.create({
+  name: "The Lacey Fair",
   description: "A wild tangle of thorns that houses a small population of changelings.",
   address: "The Hedge"
 })
