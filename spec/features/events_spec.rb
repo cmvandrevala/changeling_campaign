@@ -26,6 +26,10 @@ describe "Events" do
       expect(page).to have_content "Name"
     end
 
+    it "has the table header 'Description'" do
+      expect(page).to have_content "Description"
+    end
+
     it "has the table header 'Location'" do
       expect(page).to have_content "Location"
     end
@@ -44,6 +48,10 @@ describe "Events" do
 
     it "has the location name" do
       expect(page).to have_content "Chicago"
+    end
+
+    it "has the associated description" do
+      expect(page).to have_content "Some long description."
     end
 
     xit "has the associated character names" do
