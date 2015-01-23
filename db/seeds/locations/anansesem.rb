@@ -81,3 +81,9 @@ Location.create({
   description: "Angel Island",
   address: "Anansesem City, USA"
 })
+
+Location.create({
+  name: "Anansesem South Suburbs",
+  description: "Angel Island",
+  address: "Anansesem City, USA"
+})
