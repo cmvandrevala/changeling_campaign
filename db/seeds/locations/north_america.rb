@@ -7,6 +7,12 @@ Location.create({
 })
 
 Location.create({
+  name: "Stuyvesant High School",
+  description: "A very high end high school in the city.",
+  address: "New York City, USA"
+})
+
+Location.create({
   name: "The Brooklyn Bridge",
   description: "A bridge.",
   address: "New York City, USA"
@@ -34,4 +40,10 @@ Location.create({
   name: "Maryland Institute College of Art",
   description: "Maryland Institute College of Art (MICA) is an art and design college in Baltimore, Maryland, USA. It was founded in 1826 as the 'Maryland Institute for the Promotion of the Mechanic Arts', making it one of the first and oldest art colleges in the United States.",
   address: "Baltimore, USA"
+})
+
+Location.create({
+  name: "Door County",
+  description: "A lovely area in the finger of Wisconsin.",
+  address: "Door County, WI, USA"
 })

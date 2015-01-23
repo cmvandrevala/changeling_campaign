@@ -35,6 +35,12 @@ Location.create({
 })
 
 Location.create({
+  name: "Jeremiah's Brownstone",
+  description: "A nice brownstone apartment on the east side of downtown Anansesem city.",
+  address: "Anansesem City, USA"
+})
+
+Location.create({
   name: "The Honey Trap",
   description: "A large club with a public library in the basement.",
   address: "Anansesem City, USA"
