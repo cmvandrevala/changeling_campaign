@@ -14,7 +14,7 @@ Location.create({
 
 Location.create({
   name: "The Courthouse",
-  description: "The winter courthouse.",
+  description: "A large courthouse that shadows the winter region of the freehold. It has the Latin phrase 'ex aequo et bono' carved on the front (what is right and good).",
   address: "The North Star"
 })
 
@@ -26,6 +26,12 @@ Location.create({
 
 Location.create({
   name: "The Front Gates",
+  description: "Technically, there are four sets of front gates. But they all look remarkably similar...",
+  address: "The North Star"
+})
+
+Location.create({
+  name: "The Spring Palace",
   description: "Technically, there are four sets of front gates. But they all look remarkably similar...",
   address: "The North Star"
 })
