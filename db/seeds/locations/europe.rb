@@ -15,3 +15,9 @@ Location.create({
   description: "A poor part of London",
   address: "Ireland"
 })
+
+Location.create({
+  name: "British Isles",
+  description: "Britain",
+  address: "Britain"
+})
