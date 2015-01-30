@@ -9,3 +9,9 @@ Location.create({
   description: "A poor part of London",
   address: "London, UK"
 })
+
+Location.create({
+  name: "Galway",
+  description: "A poor part of London",
+  address: "Ireland"
+})

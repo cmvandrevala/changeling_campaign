@@ -46,7 +46,7 @@ Event.create({
   description: "Violence breaks out among the two factions when a group of Summer courters attack and kill a member of winter in Anansesem city in broad daylight. Mortals chalk this up to gang violence, making special note of the fact that the murder weapon was made of wrought iron. The Kindred of the city take extra precautions against Changeling warfare."
 })
 Event.last.characters << Character.where(name: "Natalia Yurchenko").take
-Event.last.characters << Character.where(name: "Blake Hamilton").take
+Event.last.characters << Character.where(name: "Jack Tallow").take
 Event.last.characters << Character.where(name: "Christopher Yarrow").take
 Location.where(name: "Anansesem Central Park").take.events << Event.last
 
