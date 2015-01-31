@@ -6,7 +6,7 @@ Event.create({
   description: "The party meets up in the freehold. Immediately afterwards they travel to the Lacey Fair and shop for a hollow."
 })
 Event.last.characters << Character.where(name: "Lumi Satala").take
-Event.last.characters << Character.where(name: "Nola McNamara").take
+Event.last.characters << Character.where(name: "Nola MacNamara").take
 Event.last.characters << Character.where(name: "Jack Wedgewood").take
 Event.last.characters << Character.where(name: "Johannas").take
 Location.where(name: "The Lacey Fair").take.events << Event.last

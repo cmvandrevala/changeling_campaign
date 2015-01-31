@@ -6,7 +6,7 @@ Event.create({
   description: "Lumi and Nola discuss the fae world. When Nola tries to make Lumi take a pledge of alliance, Lumi freaks out and runs away."
 })
 Event.last.characters << Character.where(name: "Lumi Satala").take
-Event.last.characters << Character.where(name: "Nola McNamara").take
+Event.last.characters << Character.where(name: "Nola MacNamara").take
 Location.where(name: "The Brownstones").take.events << Event.last
 
 Event.create({
@@ -47,6 +47,6 @@ Event.create({
   date: Date.new(2014,03,7),
   description: "Nola tries to flirt with Jack and invite him back to her place. He almost decides to go, but catches himself at the last minute and excuses himself."
 })
-Event.last.characters << Character.where(name: "Nola McNamara").take
+Event.last.characters << Character.where(name: "Nola MacNamara").take
 Event.last.characters << Character.where(name: "Jack Tallow").take
 Location.where(name: "The Front Gates").take.events << Event.last

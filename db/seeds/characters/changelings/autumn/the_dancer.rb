@@ -2,42 +2,55 @@ puts "===> The Dancer"
 
 Character.create({
   name: "The Dancer",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Cyrus Vandrevala",
+  virtue: "Hope",
+  vice: "Envy",
+  concept: "Lost Soul",
+  description: "She is a petite figure that has a subtle grace about her. She is a beautiful woman, but sometimes often looks sad to the point of being pathetic.",
+  size: 5
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Fairest",
+  kith: "Dancer",
+  court: "Autumn",
+  wyrd: 1,
+  clarity: 7
 })
 Character.last.character_attribute = CharacterAttribute.new({
   intelligence: 2,
   wits: 2,
   resolve: 2,
-  strength: 1,
-  dexterity: 4,
-  stamina: 3,
+  strength: 2,
+  dexterity: 3,
+  stamina: 2,
   presence: 2,
   manipulation: 2,
-  composure: 3
+  composure: 2
 })
 Character.last.character_skill = CharacterSkill.new({
   academics: 0,
   computer: 0,
   crafts: 0,
-  investigation: 1,
-  medicine: 1,
+  investigation: 2,
+  medicine: 2,
   occult: 2,
-  politics: 0,
+  politics: 2,
   science: 0,
-  athletics: 4,
+  athletics: 2,
   brawl: 1,
-  drive: 1,
-  firearms: 1,
-  larceny: 1,
-  stealth: 1,
-  survival: 1,
-  weaponry: 1,
+  drive: 0,
+  firearms: 0,
+  larceny: 0,
+  stealth: 2,
+  survival: 2,
+  weaponry: 0,
   animal_ken: 0,
-  empathy: 0,
+  empathy: 2,
   expression: 3,
-  intimidation: 1,
-  persuasion: 1,
+  intimidation: 0,
+  persuasion: 3,
   socialize: 0,
-  streetwise: 1,
-  subterfuge: 1
+  streetwise: 2,
+  subterfuge: 2
 })

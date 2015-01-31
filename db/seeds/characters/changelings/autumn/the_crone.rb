@@ -1,8 +1,21 @@
-puts "===> The Hag"
+puts "===> The Crone"
 
 Character.create({
-  name: "The Hag",
-  species: "Changeling"
+  name: "The Crone",
+  species: "Changeling",
+  player: "Cyrus Vandrevala",
+  virtue: "Charity",
+  vice: "Wrath",
+  concept: "Willing Oracle",
+  description: "A scarred and beaten old woman, wrapped in rags. She can barely talk without heaving and coughing.",
+  size: 5
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Wizened",
+  kith: "Oracle",
+  court: "Autumn",
+  wyrd: 2,
+  clarity: 8
 })
 Character.last.character_attribute = CharacterAttribute.new({
   intelligence: 2,
@@ -12,7 +25,7 @@ Character.last.character_attribute = CharacterAttribute.new({
   dexterity: 2,
   stamina: 2,
   presence: 2,
-  manipulation: 5,
+  manipulation: 2,
   composure: 2
 })
 Character.last.character_skill = CharacterSkill.new({
@@ -30,14 +43,14 @@ Character.last.character_skill = CharacterSkill.new({
   firearms: 1,
   larceny: 1,
   stealth: 1,
-  survival: 4,
+  survival: 1,
   weaponry: 1,
   animal_ken: 1,
   empathy: 1,
   expression: 1,
-  intimidation: 4,
-  persuasion: 4,
+  intimidation: 1,
+  persuasion: 1,
   socialize: 1,
-  streetwise: 4,
-  subterfuge: 4
+  streetwise: 1,
+  subterfuge: 1
 })

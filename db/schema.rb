@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150131145110) do
+ActiveRecord::Schema.define(version: 20150131202401) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "changeling_templates", force: :cascade do |t|
+    t.string   "seeming"
+    t.string   "kith"
+    t.string   "court"
+    t.integer  "wyrd"
+    t.integer  "clarity"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "character_id"
+  end
 
   create_table "character_attributes", force: :cascade do |t|
     t.integer  "intelligence"
@@ -66,6 +77,12 @@ ActiveRecord::Schema.define(version: 20150131145110) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "species"
+    t.string   "player"
+    t.string   "virtue"
+    t.string   "vice"
+    t.string   "concept"
+    t.integer  "size"
+    t.text     "description"
   end
 
   create_table "characters_events", force: :cascade do |t|

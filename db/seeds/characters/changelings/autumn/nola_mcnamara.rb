@@ -1,43 +1,56 @@
-puts "===> Nola McNamara"
+puts "===> Nola MacNamara"
 
 Character.create({
-  name: "Nola McNamara",
-  species: "Changeling"
+  name: "Nola MacNamara",
+  species: "Changeling",
+  player: "Annamarie Vandrevala",
+  virtue: "Fortitude",
+  vice: "Pride",
+  concept: "",
+  description: "She is a selkie from the old Irish legends. She has bluish-green skin, slightly webbed hands and feet, and bold red hair.",
+  size: 5
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Elemental",
+  kith: "Waterborn",
+  court: "Autumn",
+  wyrd: 2,
+  clarity: 7
 })
 Character.last.character_attribute = CharacterAttribute.new({
   intelligence: 2,
   wits: 2,
-  resolve: 2,
-  strength: 1,
-  dexterity: 4,
-  stamina: 3,
-  presence: 2,
-  manipulation: 2,
-  composure: 3
+  resolve: 3,
+  strength: 2,
+  dexterity: 2,
+  stamina: 2,
+  presence: 3,
+  manipulation: 4,
+  composure: 1
 })
 Character.last.character_skill = CharacterSkill.new({
   academics: 0,
   computer: 0,
   crafts: 0,
   investigation: 1,
-  medicine: 1,
+  medicine: 2,
   occult: 2,
-  politics: 0,
+  politics: 2,
   science: 0,
-  athletics: 4,
-  brawl: 1,
-  drive: 1,
-  firearms: 1,
-  larceny: 1,
-  stealth: 1,
+  athletics: 3,
+  brawl: 0,
+  drive: 0,
+  firearms: 0,
+  larceny: 0,
+  stealth: 0,
   survival: 1,
-  weaponry: 1,
-  animal_ken: 0,
-  empathy: 0,
+  weaponry: 0,
+  animal_ken: 3,
+  empathy: 1,
   expression: 3,
-  intimidation: 1,
-  persuasion: 1,
-  socialize: 0,
-  streetwise: 1,
-  subterfuge: 1
+  intimidation: 0,
+  persuasion: 3,
+  socialize: 1,
+  streetwise: 0,
+  subterfuge: 0
 })

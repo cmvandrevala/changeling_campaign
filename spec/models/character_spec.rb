@@ -20,6 +20,30 @@ describe Character, :type => :model do
       expect(@character).to respond_to :species
     end
 
+    it "has a player" do
+      expect(@character).to respond_to :player
+    end
+
+    it "has a virtue" do
+      expect(@character).to respond_to :virtue
+    end
+
+    it "has a vice" do
+      expect(@character).to respond_to :vice
+    end
+
+    it "has a concept" do
+      expect(@character).to respond_to :concept
+    end
+
+    it "has a size" do
+      expect(@character).to respond_to :size
+    end
+
+    it "has a description" do
+      expect(@character).to respond_to :description
+    end
+
   end
 
   describe "validations" do
@@ -55,6 +79,11 @@ describe Character, :type => :model do
 
     it "should have one skill" do
       t = Character.reflect_on_association(:character_skill)
+      expect(t.macro).to eq :has_one
+    end
+
+    it "should have one changeling template" do
+      t = Character.reflect_on_association(:changeling_template)
       expect(t.macro).to eq :has_one
     end
 

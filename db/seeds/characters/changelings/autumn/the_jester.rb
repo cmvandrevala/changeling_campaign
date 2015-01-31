@@ -2,7 +2,20 @@ puts "===> The Jester"
 
 Character.create({
   name: "The Jester",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Cyrus Vandrevala",
+  virtue: "Fortitude",
+  vice: "Pride",
+  concept: "The New King",
+  description: "A sarcastic and joyful fellow, gaily clad in a colorful jester's outfit. His face is painted with strange, arcane symbols.",
+  size: 5
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Fairest",
+  kith: "Romancer",
+  court: "Autumn",
+  wyrd: 7,
+  clarity: 3
 })
 Character.last.character_attribute = CharacterAttribute.new({
   intelligence: 3,
@@ -16,24 +29,24 @@ Character.last.character_attribute = CharacterAttribute.new({
   composure: 3
 })
 Character.last.character_skill = CharacterSkill.new({
-  academics: 2,
-  computer: 2,
-  crafts: 2,
-  investigation: 2,
-  medicine: 2,
-  occult: 2,
-  politics: 2,
-  science: 2,
-  athletics: 3,
-  brawl: 3,
-  drive: 3,
-  firearms: 3,
-  larceny: 3,
-  stealth: 3,
-  survival: 3,
-  weaponry: 3,
-  animal_ken: 4,
-  empathy: 4,
+  academics: 4,
+  computer: 0,
+  crafts: 0,
+  investigation: 4,
+  medicine: 0,
+  occult: 4,
+  politics: 4,
+  science: 0,
+  athletics: 4,
+  brawl: 4,
+  drive: 0,
+  firearms: 4,
+  larceny: 4,
+  stealth: 4,
+  survival: 4,
+  weaponry: 4,
+  animal_ken: 0,
+  empathy: 0,
   expression: 4,
   intimidation: 4,
   persuasion: 4,
