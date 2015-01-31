@@ -6,7 +6,7 @@ Event.create({
   description: "Nola McNamara is born to a fishing family."
 })
 Event.last.characters << Character.where(name: "Nola McNamara").take
-Location.where(name: "Galway").take.events << Event.last
+Location.where(name: "Ireland").take.events << Event.last
 
 Event.create({
   name: "The Kidnapped Irish",

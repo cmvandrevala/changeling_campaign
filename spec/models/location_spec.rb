@@ -16,27 +16,20 @@ describe Location, :type => :model do
       expect(@location).to respond_to :name
     end
 
+    it "has a subregion" do
+      expect(@location).to respond_to :subregion
+    end
+
+    it "has a region" do
+      expect(@location).to respond_to :region
+    end
+
     it "has a description" do
       expect(@location).to respond_to :description
     end
 
-  end
-
-  describe "validations" do
-
-    context "name" do
-
-      it "is present" do
-        invalid = Location.new
-        expect(invalid).to be_invalid
-      end
-
-      it "is unique" do
-        Location.create(name: "Some Name")
-        duplicate = Location.new(name: "Some Name")
-        expect(duplicate).to be_invalid
-      end
-
+    it "does not have an address" do
+      expect(@location).not_to respond_to :address
     end
 
   end

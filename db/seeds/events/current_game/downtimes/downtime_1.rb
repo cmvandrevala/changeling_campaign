@@ -7,7 +7,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Lumi Satala").take
 Event.last.characters << Character.where(name: "Nola McNamara").take
-Location.where(name: "Sheamus' Brownstone").take.events << Event.last
+Location.where(name: "The Brownstones").take.events << Event.last
 
 Event.create({
   name: "The Introduction",

@@ -6,7 +6,7 @@ Event.create({
   description: "Jack Tallow stares off into the fireplace during his first week of college. The flames are seductive, lulling him into a sleepy stupor. All at once, he feels himself tumble forward, falling into a hellish landscape."
 })
 Event.last.characters << Character.where(name: "Issac Corvi").take
-Location.where(name: "Columbia University").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "Clawing Out of Hell",

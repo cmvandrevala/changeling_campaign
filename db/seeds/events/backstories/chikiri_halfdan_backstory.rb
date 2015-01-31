@@ -7,4 +7,4 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Chikiri Komieji").take
 Event.last.characters << Character.where(name: "Halfdan Ragnorsson").take
-Location.where(name: "Hang Son Doong").take.events << Event.last
+Location.where(name: "Vietnam").take.events << Event.last

@@ -6,7 +6,7 @@ Event.create({
   description: "A British nobleman has a son."
 })
 Event.last.characters << Character.where(name: "Jack Wedgewood").take
-Location.where(name: "British Isles").take.events << Event.last
+Location.where(name: "United Kingdom").take.events << Event.last
 
 Event.create({
   name: "The Time Capsule",
@@ -14,7 +14,7 @@ Event.create({
   description: "Jack buries a time capsule with his family, hoping that future generations will think back to their time. He has no idea how useful this capsule will be for him in the future."
 })
 Event.last.characters << Character.where(name: "Jack Wedgewood").take
-Location.where(name: "British Isles").take.events << Event.last
+Location.where(name: "United Kingdom").take.events << Event.last
 
 Event.create({
   name: "The Lost Hunter",
@@ -23,7 +23,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Jack Wedgewood").take
 Event.last.characters << Character.where(name: "The Game Maker").take
-Location.where(name: "British Isles").take.events << Event.last
+Location.where(name: "United Kingdom").take.events << Event.last
 
 Event.create({
   name: "The First Failed Escape",
@@ -59,7 +59,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Jack Wedgewood").take
 Event.last.characters << Character.where(name: "William Whitehall").take
-Location.where(name: "British Isles").take.events << Event.last
+Location.where(name: "United Kingdom").take.events << Event.last
 
 Event.create({
   name: "The Time Capsule Returned",
@@ -67,7 +67,7 @@ Event.create({
   description: "Jack digs up the time capsule that he and his family had buried so many years ago. He manages to sell many of the old items and get a healthy sum of money."
 })
 Event.last.characters << Character.where(name: "Jack Wedgewood").take
-Location.where(name: "British Isles").take.events << Event.last
+Location.where(name: "United Kingdom").take.events << Event.last
 
 Event.create({
   name: "To a New Land",
@@ -76,4 +76,4 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Jack Wedgewood").take
 Event.last.characters << Character.where(name: "William Whitehall").take
-Location.where(name: "British Isles").take.events << Event.last
+Location.where(name: "United Kingdom").take.events << Event.last

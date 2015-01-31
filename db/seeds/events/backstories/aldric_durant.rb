@@ -6,7 +6,7 @@ Event.create({
   description: "A tiny baby is born on a strangely cold night."
 })
 Event.last.characters << Character.where(name: "Aldric Durant").take
-Location.where(name: "Quartier Pigalle").take.events << Event.last
+Location.where(name: "France").take.events << Event.last
 
 Event.create({
   name: "Escape to London",
@@ -14,7 +14,7 @@ Event.create({
   description: "Aldric and his parents flee to England to try to find work and safety after the completion of World War I. Their ultimate plan is to set off for the United States."
 })
 Event.last.characters << Character.where(name: "Aldric Durant").take
-Location.where(name: "The East End").take.events << Event.last
+Location.where(name: "United Kingdom").take.events << Event.last
 
 Event.create({
   name: "To the New World",
@@ -22,7 +22,7 @@ Event.create({
   description: "Aldric and his parents manage to secure a spot on a boat heading to the United States. Their savings are all but depleted."
 })
 Event.last.characters << Character.where(name: "Aldric Durant").take
-Location.where(name: "The East End").take.events << Event.last
+Location.where(name: "United Kingdom").take.events << Event.last
 
 Event.create({
   name: "Brave New World",
@@ -30,7 +30,7 @@ Event.create({
   description: "Aldric and his parents arrive in New York City. They find housing in a predominantly Irish and poor neighborhood."
 })
 Event.last.characters << Character.where(name: "Aldric Durant").take
-Location.where(name: "Hell's Kitchen").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "Runner Boy",
@@ -38,7 +38,7 @@ Event.create({
   description: "Aldric has managed to blend into the Irish neighborhood even though he is French. His immersion in Irish culture is so good, he manages to become a runner boy for The Marginals (an Irish gang of the time)."
 })
 Event.last.characters << Character.where(name: "Aldric Durant").take
-Location.where(name: "Hell's Kitchen").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "Whisked Away",
@@ -73,7 +73,7 @@ Event.create({
   description: "Aldric finds himself back in his old neighborhood. However, it seems like everything has changed. Still, he keeps his head down and tries to piece his life back together."
 })
 Event.last.characters << Character.where(name: "Aldric Durant").take
-Location.where(name: "Hell's Kitchen").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 
 

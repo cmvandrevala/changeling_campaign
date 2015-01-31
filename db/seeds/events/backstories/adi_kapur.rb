@@ -6,7 +6,7 @@ Event.create({
   description: "Adi is born to Rustom and Puja Kapur in a poverty stricken slum. A fortuneteller predicts that she will have an exceedingly difficult life but will somehow persevere through all obstacles."
 })
 Event.last.characters << Character.where(name: "Adi Kapur").take
-Location.where(name: "Rajendra Nagar Slum").take.events << Event.last
+Location.where(name: "India").take.events << Event.last
 
 Event.create({
   name: "A Terrible Storm",
@@ -15,7 +15,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Adi Kapur").take
 Event.last.characters << Character.where(name: "The False Deity").take
-Location.where(name: "Rajendra Nagar Slum").take.events << Event.last
+Location.where(name: "India").take.events << Event.last
 
 Event.create({
   name: "The Innocuous Knife",

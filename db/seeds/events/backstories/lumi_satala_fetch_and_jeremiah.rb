@@ -6,7 +6,7 @@ Event.create({
   description: "Lumi's fetch opens her eyes, not knowing what she truly is. She thinks that she is actually Lumi. She feels terrible for her part in the cheating scandal from the day before."
 })
 Event.last.characters << Character.where(name: "Lumi Satala (Fetch)").take
-Location.where(name: "Stuyvesant High School").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "The First Apology",
@@ -41,7 +41,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Lumi Satala (Fetch)").take
 Event.last.characters << Character.where(name: "Jeremiah").take
-Location.where(name: "Jeremiah's Brownstone").take.events << Event.last
+Location.where(name: "The Brownstones").take.events << Event.last
 
 Event.create({
   name: "Serenity Now",
@@ -50,7 +50,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Lumi Satala (Fetch)").take
 Event.last.characters << Character.where(name: "Jeremiah").take
-Location.where(name: "Jeremiah's Brownstone").take.events << Event.last
+Location.where(name: "The Brownstones").take.events << Event.last
 
 Event.create({
   name: "Moving on Up",
@@ -58,7 +58,7 @@ Event.create({
   description: "Lumi's fetch seems a natural for Serenity Now. She is offered a promotion to be the lead spokeswoman for the company, and promises to help clean up the streets of the city. There will be a ceremony for her promotion in mid-March."
 })
 Event.last.characters << Character.where(name: "Lumi Satala (Fetch)").take
-Location.where(name: "Massive Dynamics").take.events << Event.last
+Location.where(name: "Massive Dynamics Corporate Headquarters").take.events << Event.last
 
 Event.create({
   name: "The Ceremony",
@@ -66,4 +66,4 @@ Event.create({
   description: "Lumi's fetch appears at a ceremony, promoting her to lead spokeswoman for the organization. The newspapers cover it extensively."
 })
 Event.last.characters << Character.where(name: "Lumi Satala (Fetch)").take
-Location.where(name: "Massive Dynamics").take.events << Event.last
+Location.where(name: "Massive Dynamics Corporate Headquarters").take.events << Event.last

@@ -6,7 +6,7 @@ Event.create({
   description: "Aravinda arrives in New York City. She is not entirely sure what drew her to this city in the first place."
 })
 Event.last.characters << Character.where(name: "Aravinda Agarwall").take
-Location.where(name: "The Brooklyn Bridge").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "The Mythical Hammer",
@@ -15,7 +15,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Aravinda Agarwall").take
 Event.last.characters << Character.where(name: "Loki").take
-Location.where(name: "The Brooklyn Bridge").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "The Trickster Returns Home",
@@ -23,7 +23,7 @@ Event.create({
   description: "Loki arrives in Anasesem City. He's baffled as to what happened, and tries to reconstruct the events that led to the recent catastrophe. His primary focus is to find what remains of the library."
 })
 Event.last.characters << Character.where(name: "Loki").take
-Location.where(name: "Massive Dynamics").take.events << Event.last
+Location.where(name: "Massive Dynamics Corporate Headquarters").take.events << Event.last
 
 Event.create({
   name: "The Stone Slab Encounter",
@@ -32,7 +32,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Loki").take
 Event.last.characters << Character.where(name: "The Kidnapped Child").take
-Location.where(name: "Tremiere Chantry").take.events << Event.last
+Location.where(name: "Anansesem City Public Library").take.events << Event.last
 
 Event.create({
   name: "The Rumor",
@@ -50,7 +50,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Loki").take
 Event.last.characters << Character.where(name: "Charles Harding").take
-Location.where(name: "Anansesem Police Station - West Branch").take.events << Event.last
+Location.where(name: "Anansesem Police Headquarters").take.events << Event.last
 
 Event.create({
   name: "Too Little Too Late",
@@ -79,7 +79,7 @@ Event.create({
   description: "Aravinda arrives in Anansesem City. She begins to infiltrate the Camarilla without even realizing it."
 })
 Event.last.characters << Character.where(name: "Aravinda Agarwall").take
-Location.where(name: "Ellisium").take.events << Event.last
+Location.where(name: "The Honey Trap").take.events << Event.last
 
 Event.create({
   name: "The Sleeper Agent",
@@ -88,7 +88,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Aravinda Agarwall").take
 Event.last.characters << Character.where(name: "Loki").take
-Location.where(name: "Ellisium").take.events << Event.last
+Location.where(name: "The Honey Trap").take.events << Event.last
 
 Event.create({
   name: "An Undisclosed Meeting",
@@ -98,7 +98,7 @@ Event.create({
 Event.last.characters << Character.where(name: "Loki").take
 Event.last.characters << Character.where(name: "Aldric Durant").take
 Event.last.characters << Character.where(name: "The Kidnapped Child").take
-Location.where(name: "Factory").take.events << Event.last
+Location.where(name: "Anansesem City Industrial Park").take.events << Event.last
 
 Event.create({
   name: "The Emergency Meeting",
@@ -129,7 +129,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "The Jester").take
 Event.last.characters << Character.where(name: "Aldric Durant").take
-Location.where(name: "The Courthouse").take.events << Event.last
+Location.where(name: "The Winter Courthouse").take.events << Event.last
 
 Event.create({
   name: "The Mistletoe Pact",
@@ -139,7 +139,7 @@ Event.create({
 Event.last.characters << Character.where(name: "Loki").take
 Event.last.characters << Character.where(name: "Aldric Durant").take
 Event.last.characters << Character.where(name: "The Kidnapped Child").take
-Location.where(name: "Tremiere Chantry").take.events << Event.last
+Location.where(name: "Anansesem City Public Library").take.events << Event.last
 
 Event.create({
   name: "The Honey Trap Encounter",

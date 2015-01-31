@@ -6,7 +6,7 @@ Event.create({
   description: "An autistic baby boy is born to Christopher and Lucinda Corvi. They vow to make sure that Issac lives a happy and healthy life, even with his condition."
 })
 Event.last.characters << Character.where(name: "Issac Corvi").take
-Location.where(name: "Randallstown").take.events << Event.last
+Location.where(name: "Baltimore").take.events << Event.last
 
 Event.create({
   name: "A Smart Cookie",
@@ -14,7 +14,7 @@ Event.create({
   description: "From a young age, Issac showed a remarkable artistic genius - especially with calligraphy. Although never officially documented, his doctor classifies him as a savant."
 })
 Event.last.characters << Character.where(name: "Issac Corvi").take
-Location.where(name: "Randallstown").take.events << Event.last
+Location.where(name: "Baltimore").take.events << Event.last
 
 Event.create({
   name: "The Art School",
@@ -22,7 +22,7 @@ Event.create({
   description: "Issac is enrolled in a private school where he can learn at a self-guided pace. He spends most of his time reading and writing and only reluctantly attends math or science classes."
 })
 Event.last.characters << Character.where(name: "Issac Corvi").take
-Location.where(name: "Randallstown").take.events << Event.last
+Location.where(name: "Baltimore").take.events << Event.last
 
 Event.create({
   name: "Critiques on Society",
@@ -30,7 +30,7 @@ Event.create({
   description: "Issac has become a pretty talented writer. He becomes fascinated with history and philosophy, adding depth to his writing style. He often writes critiques about the state of society, as any angsty pre-teen is wont to do."
 })
 Event.last.characters << Character.where(name: "Issac Corvi").take
-Location.where(name: "Randallstown").take.events << Event.last
+Location.where(name: "Baltimore").take.events << Event.last
 
 Event.create({
   name: "To MICA",
@@ -38,7 +38,7 @@ Event.create({
   description: "Issac wants to go to college, but his family does not know if he will succeed in that kind of environment. After many arguements, his family decides to let him attend college on the condition that he stay relatively close to home. He is accepted to the Maryland Institute College of Art (one of the top fine arts programs in the country) for Humanistic Studies and Creative Writing."
 })
 Event.last.characters << Character.where(name: "Issac Corvi").take
-Location.where(name: "Maryland Institute College of Art").take.events << Event.last
+Location.where(name: "Baltimore").take.events << Event.last
 
 Event.create({
   name: "Issac's Abduction",

@@ -6,7 +6,7 @@ Event.create({
   description: "Johannas breaks up with his girlfriend."
 })
 Event.last.characters << Character.where(name: "Johannas").take
-Location.where(name: "Anansesem South Suburbs").take.events << Event.last
+Location.where(name: "Anansesem City South Suburbs").take.events << Event.last
 
 Event.create({
   name: "The Performance Review",
@@ -69,7 +69,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Geoffrey Taylor").take
 Event.last.characters << Character.where(name: "Johannas").take
-Location.where(name: "Geoffrey's Shop").take.events << Event.last
+Location.where(name: "Anansesem Shopping District").take.events << Event.last
 
 Event.create({
   name: "The New Gig",
@@ -79,4 +79,4 @@ Event.create({
 Event.last.characters << Character.where(name: "Edmond Groeber Sr.").take
 Event.last.characters << Character.where(name: "Edmond Groeber Jr.").take
 Event.last.characters << Character.where(name: "Johannas").take
-Location.where(name: "Groeber Funeral Home").take.events << Event.last
+Location.where(name: "Little Everything").take.events << Event.last

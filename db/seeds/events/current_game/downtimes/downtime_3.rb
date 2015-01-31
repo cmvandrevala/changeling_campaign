@@ -8,7 +8,7 @@ Event.create({
 Event.last.characters << Character.where(name: "Lumi Satala").take
 Event.last.characters << Character.where(name: "Lumi Satala (Fetch)").take
 Event.last.characters << Character.where(name: "'Richy' Rich Slim").take
-Location.where(name: "Anansesem Industrial Park").take.events << Event.last
+Location.where(name: "Anansesem City Industrial Park").take.events << Event.last
 
 Event.create({
   name: "The Mysterious Letter",
@@ -17,7 +17,7 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "Lumi Satala").take
 Event.last.characters << Character.where(name: "Bridget Kensington").take
-Location.where(name: "Anansesem Industrial Park").take.events << Event.last
+Location.where(name: "Anansesem City Industrial Park").take.events << Event.last
 
 Event.create({
   name: "The Rumor",

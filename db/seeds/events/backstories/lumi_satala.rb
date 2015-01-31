@@ -14,7 +14,7 @@ Event.create({
   description: "Lumi is suspended from High School following a major cheating scandal."
 })
 Event.last.characters << Character.where(name: "Lumi Satala").take
-Location.where(name: "Stuyvesant High School").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "The Stolen Doll",

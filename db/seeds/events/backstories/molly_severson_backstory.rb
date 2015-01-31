@@ -6,7 +6,7 @@ Event.create({
   description: "A pretty baby girl is born to Richard and Margaret Severson. She is a pudgy bundle of joy."
 })
 Event.last.characters << Character.where(name: "Molly Severson").take
-Location.where(name: "Lower East Side").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "Put That Down!",
@@ -14,7 +14,7 @@ Event.create({
   description: "Molly loves anything that wiggles or crawls. Her parents find that they constantly have to tell her to put down little critters."
 })
 Event.last.characters << Character.where(name: "Molly Severson").take
-Location.where(name: "Lower East Side").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "The Animal Shelter",
@@ -22,7 +22,7 @@ Event.create({
   description: "Molly has developed an interest in animals and wants to become a vet when she grows up. She volunteers her time at The Second Chance Animal Shelter, playing with lonely cats and dogs."
 })
 Event.last.characters << Character.where(name: "Molly Severson").take
-Location.where(name: "Lower East Side").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "The Veterinary Clinic",
@@ -30,7 +30,7 @@ Event.create({
   description: "Molly gets the opportunity to work part time at Shady Brook Animal Hospital. She mostly does clerical work but is overjoyed to be moving towards her dream job."
 })
 Event.last.characters << Character.where(name: "Molly Severson").take
-Location.where(name: "Lower East Side").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "Off to College",
@@ -38,7 +38,7 @@ Event.create({
   description: "Molly accepts a scholarship to Columbia University to study biochemistry. This will be her stepping stone to veterinary school."
 })
 Event.last.characters << Character.where(name: "Molly Severson").take
-Location.where(name: "Columbia University").take.events << Event.last
+Location.where(name: "New York City").take.events << Event.last
 
 Event.create({
   name: "A New Species",
