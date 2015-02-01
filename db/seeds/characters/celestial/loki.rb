@@ -2,5 +2,6 @@ puts "===> Loki"
 
 Character.create({
   name: "Loki",
-  species: "God"
+  species: "Celestial",
+  player: "Tyler Browning"
 })
