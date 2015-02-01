@@ -49,7 +49,7 @@ Character.last.character_skill = CharacterSkill.new({
   empathy: 0,
   expression: 2,
   intimidation: 4,
-  persuasion: 2,
+  persuasion: 1,
   socialize: 0,
   streetwise: 2,
   subterfuge: 3

@@ -1,19 +1,25 @@
-puts "===> Adi Kapur (Fetch)"
+puts "===> Johannas (Fetch)"
 
 Character.create({
-  name: "Adi Kapur (Fetch)",
-  species: "Fetch"
+  name: "Johannas (Fetch)",
+  species: "Fetch",
+  player: "Cyrus Vandrevala",
+  virtue: "Hope",
+  vice: "Sloth",
+  concept: "Laziness Sponge",
+  description: "He is the fetch of Johannas. He looks like the mortal version of him in every way, and represents the worst of Johannas' sloth.",
+  size: 5
 })
 Character.last.character_attribute = CharacterAttribute.new({
-  intelligence: 2,
-  wits: 3,
-  resolve: 3,
-  strength: 3,
-  dexterity: 3,
-  stamina: 3,
-  presence: 2,
+  intelligence: 1,
+  wits: 1,
+  resolve: 1,
+  strength: 1,
+  dexterity: 1,
+  stamina: 1,
+  presence: 1,
   manipulation: 1,
-  composure: 2
+  composure: 1
 })
 Character.last.character_skill = CharacterSkill.new({
   academics: 1,
