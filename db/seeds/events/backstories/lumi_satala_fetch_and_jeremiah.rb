@@ -22,7 +22,7 @@ Event.create({
   description: "When Jeremiah returns home from business, Lumi apologizes to him again. He is all to happy with her new attitude. He tells her about their future plans to move to Anansesem City."
 })
 Event.last.characters << Character.where(name: "Lumi Satala (Fetch)").take
-Event.last.characters << Character.where(name: "Jeremiah").take
+Event.last.characters << Character.where(name: "Jeremiah Satala").take
 Location.where(name: "Door County").take.events << Event.last
 
 Event.create({
@@ -31,7 +31,7 @@ Event.create({
   description: "Lumi's fetch is married to her betrothed. She could not be happier."
 })
 Event.last.characters << Character.where(name: "Lumi Satala (Fetch)").take
-Event.last.characters << Character.where(name: "Jeremiah").take
+Event.last.characters << Character.where(name: "Jeremiah Satala").take
 Location.where(name: "Door County").take.events << Event.last
 
 Event.create({
@@ -40,7 +40,7 @@ Event.create({
   description: "Lumi's fetch and Jeremiah move to Anansesem City. He immediately begins work at Massive Dynamics."
 })
 Event.last.characters << Character.where(name: "Lumi Satala (Fetch)").take
-Event.last.characters << Character.where(name: "Jeremiah").take
+Event.last.characters << Character.where(name: "Jeremiah Satala").take
 Location.where(name: "The Brownstones").take.events << Event.last
 
 Event.create({
@@ -49,7 +49,7 @@ Event.create({
   description: "Lumi's fetch has become slightly bored with her life as a stay-at-home wife. She talks with Jeremiah who recommends that she become a spokeswoman for Serenity Now. The program was dropped many years ago, but it might be time for a comeback. Jeremiah knows that this will help his own standing in the company."
 })
 Event.last.characters << Character.where(name: "Lumi Satala (Fetch)").take
-Event.last.characters << Character.where(name: "Jeremiah").take
+Event.last.characters << Character.where(name: "Jeremiah Satala").take
 Location.where(name: "The Brownstones").take.events << Event.last
 
 Event.create({

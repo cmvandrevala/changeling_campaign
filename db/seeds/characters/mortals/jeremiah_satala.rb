@@ -1,7 +1,7 @@
-puts "===> Edmond Groeber Sr."
+puts "===> Jeremiah Satala"
 
 Character.create({
-  name: "Edmond Groeber Sr.",
+  name: "Jeremiah Satala",
   species: "Mortal",
   player: "Cyrus Vandrevala"
 })
