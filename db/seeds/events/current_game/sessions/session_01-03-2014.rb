@@ -10,3 +10,12 @@ Event.last.characters << Character.where(name: "Nola MacNamara").take
 Event.last.characters << Character.where(name: "Jack Wedgewood").take
 Event.last.characters << Character.where(name: "Johannas").take
 Location.where(name: "The Lacey Fair").take.events << Event.last
+
+Event.create({
+  name: "The Business Card",
+  date: Date.new(2014,03,01),
+  description: "After a brief conversation, Jon gives Lumi a business card."
+})
+Event.last.characters << Character.where(name: "Lumi Satala").take
+Event.last.characters << Character.where(name: "Jon").take
+Location.where(name: "The Lacey Fair").take.events << Event.last
