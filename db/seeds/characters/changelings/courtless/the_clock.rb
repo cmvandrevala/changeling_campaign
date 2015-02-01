@@ -2,42 +2,55 @@ puts "===> The Clock"
 
 Character.create({
   name: "The Clock",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Cyrus Vandrevala",
+  virtue: "Temperance",
+  vice: "Gluttony",
+  concept: "Changeling Shopkeer Among Goblins",
+  description: "A chubby man with watches and clocks worn all over his body. He has tattoos of the numbers 1 - 12 all over his body.",
+  size: 5
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Wizened",
+  kith: "Strategist",
+  court: "Courtless",
+  wyrd: 4,
+  clarity: 6
 })
 Character.last.character_attribute = CharacterAttribute.new({
   intelligence: 2,
-  wits: 3,
-  resolve: 3,
-  strength: 3,
-  dexterity: 3,
-  stamina: 3,
-  presence: 2,
-  manipulation: 1,
-  composure: 2
+  wits: 2,
+  resolve: 2,
+  strength: 2,
+  dexterity: 2,
+  stamina: 2,
+  presence: 4,
+  manipulation: 4,
+  composure: 4
 })
 Character.last.character_skill = CharacterSkill.new({
-  academics: 1,
-  computer: 1,
-  crafts: 1,
-  investigation: 1,
-  medicine: 1,
-  occult: 1,
-  politics: 1,
-  science: 1,
-  athletics: 1,
-  brawl: 1,
-  drive: 1,
-  firearms: 1,
-  larceny: 1,
-  stealth: 1,
-  survival: 1,
+  academics: 2,
+  computer: 2,
+  crafts: 5,
+  investigation: 2,
+  medicine: 0,
+  occult: 0,
+  politics: 2,
+  science: 0,
+  athletics: 0,
+  brawl: 0,
+  drive: 0,
+  firearms: 4,
+  larceny: 0,
+  stealth: 0,
+  survival: 0,
   weaponry: 1,
-  animal_ken: 1,
-  empathy: 1,
-  expression: 1,
-  intimidation: 1,
-  persuasion: 1,
-  socialize: 1,
-  streetwise: 1,
-  subterfuge: 1
+  animal_ken: 0,
+  empathy: 2,
+  expression: 2,
+  intimidation: 3,
+  persuasion: 3,
+  socialize: 3,
+  streetwise: 2,
+  subterfuge: 2
 })

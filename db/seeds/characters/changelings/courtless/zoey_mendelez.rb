@@ -2,42 +2,55 @@ puts "===> Zoey Mendelez"
 
 Character.create({
   name: "Zoey Mendelez",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Cyrus Vandrevala",
+  virtue: "Charity",
+  vice: "Lust",
+  concept: "Arm Candy for Hire",
+  description: "A beautiful young lady that seems to exude sex. She has a shapely, classical figure, raven black hair, deep red lips, and brilliant blue eyes.",
+  size: 5
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Fairest",
+  kith: "Playmate",
+  court: "Courtless",
+  wyrd: 4,
+  clarity: 5
 })
 Character.last.character_attribute = CharacterAttribute.new({
   intelligence: 2,
-  wits: 3,
+  wits: 2,
   resolve: 3,
-  strength: 3,
-  dexterity: 3,
-  stamina: 3,
-  presence: 2,
-  manipulation: 1,
+  strength: 2,
+  dexterity: 2,
+  stamina: 2,
+  presence: 3,
+  manipulation: 4,
   composure: 2
 })
 Character.last.character_skill = CharacterSkill.new({
-  academics: 1,
+  academics: 2,
   computer: 1,
   crafts: 1,
-  investigation: 1,
-  medicine: 1,
-  occult: 1,
-  politics: 1,
-  science: 1,
-  athletics: 1,
-  brawl: 1,
-  drive: 1,
-  firearms: 1,
-  larceny: 1,
-  stealth: 1,
+  investigation: 2,
+  medicine: 0,
+  occult: 3,
+  politics: 3,
+  science: 0,
+  athletics: 2,
+  brawl: 0,
+  drive: 0,
+  firearms: 0,
+  larceny: 2,
+  stealth: 3,
   survival: 1,
-  weaponry: 1,
-  animal_ken: 1,
-  empathy: 1,
-  expression: 1,
-  intimidation: 1,
-  persuasion: 1,
-  socialize: 1,
-  streetwise: 1,
-  subterfuge: 1
+  weaponry: 0,
+  animal_ken: 0,
+  empathy: 4,
+  expression: 4,
+  intimidation: 4,
+  persuasion: 4,
+  socialize: 4,
+  streetwise: 2,
+  subterfuge: 4
 })

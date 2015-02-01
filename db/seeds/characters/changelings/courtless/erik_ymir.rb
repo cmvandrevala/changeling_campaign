@@ -2,7 +2,20 @@ puts "===> Erik Ymir"
 
 Character.create({
   name: "Erik Ymir",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Jon Pessin",
+  virtue: "Prudence",
+  vice: "Envy",
+  concept: "Compassionate Frost Giant",
+  description: "A large frost giant with skin tinged blue.",
+  size: 5
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Ogre",
+  kith: "Gargantuan/Stonebones",
+  court: "Sun Court",
+  wyrd: 4,
+  clarity: 6
 })
 Character.last.character_attribute = CharacterAttribute.new({
   intelligence: 2,

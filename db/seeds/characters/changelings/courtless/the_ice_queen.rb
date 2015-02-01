@@ -2,42 +2,55 @@ puts "===> The Ice Queen"
 
 Character.create({
   name: "The Ice Queen",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Cyrus Vandrevala",
+  virtue: "Prudence",
+  vice: "Pride",
+  concept: "Heart Breaker",
+  description: "A tall, elegant woman who seems to have frost crystallized all over her skin. She rarely smiles.",
+  size: 5
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Elemental",
+  kith: "Snowskin",
+  court: "Courtless",
+  wyrd: 6,
+  clarity: 5
 })
 Character.last.character_attribute = CharacterAttribute.new({
-  intelligence: 2,
+  intelligence: 3,
   wits: 3,
   resolve: 3,
-  strength: 3,
-  dexterity: 3,
-  stamina: 3,
-  presence: 2,
-  manipulation: 1,
-  composure: 2
+  strength: 2,
+  dexterity: 2,
+  stamina: 4,
+  presence: 5,
+  manipulation: 6,
+  composure: 5
 })
 Character.last.character_skill = CharacterSkill.new({
-  academics: 1,
-  computer: 1,
-  crafts: 1,
-  investigation: 1,
-  medicine: 1,
-  occult: 1,
-  politics: 1,
+  academics: 2,
+  computer: 0,
+  crafts: 0,
+  investigation: 0,
+  medicine: 0,
+  occult: 3,
+  politics: 4,
   science: 1,
   athletics: 1,
-  brawl: 1,
-  drive: 1,
-  firearms: 1,
-  larceny: 1,
-  stealth: 1,
+  brawl: 0,
+  drive: 0,
+  firearms: 0,
+  larceny: 0,
+  stealth: 0,
   survival: 1,
-  weaponry: 1,
-  animal_ken: 1,
-  empathy: 1,
-  expression: 1,
-  intimidation: 1,
-  persuasion: 1,
-  socialize: 1,
-  streetwise: 1,
-  subterfuge: 1
+  weaponry: 0,
+  animal_ken: 0,
+  empathy: 3,
+  expression: 3,
+  intimidation: 3,
+  persuasion: 3,
+  socialize: 5,
+  streetwise: 0,
+  subterfuge: 2
 })

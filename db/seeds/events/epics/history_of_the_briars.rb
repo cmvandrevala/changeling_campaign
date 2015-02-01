@@ -44,7 +44,6 @@ Event.last.characters << Character.where(name: "The Tin Man").take
 Event.last.characters << Character.where(name: "The Clock").take
 Event.last.characters << Character.where(name: "The Gravedigger").take
 Event.last.characters << Character.where(name: "The Ice Queen").take
-Event.last.characters << Character.where(name: "The Sheriff").take
 Event.last.characters << Character.where(name: "The Vesper").take
 Location.where(name: "The Briars").take.events << Event.last
 
@@ -68,7 +67,6 @@ Event.last.characters << Character.where(name: "The Tin Man").take
 Event.last.characters << Character.where(name: "The Clock").take
 Event.last.characters << Character.where(name: "The Gravedigger").take
 Event.last.characters << Character.where(name: "The Ice Queen").take
-Event.last.characters << Character.where(name: "The Sheriff").take
 Event.last.characters << Character.where(name: "The Vesper").take
 Event.last.characters << Character.where(name: "The Kidnapped Child").take
 Location.where(name: "Dreamscape").take.events << Event.last
@@ -93,7 +91,6 @@ Event.last.characters << Character.where(name: "The Tin Man").take
 Event.last.characters << Character.where(name: "The Clock").take
 Event.last.characters << Character.where(name: "The Gravedigger").take
 Event.last.characters << Character.where(name: "The Ice Queen").take
-Event.last.characters << Character.where(name: "The Sheriff").take
 Event.last.characters << Character.where(name: "The Vesper").take
 Event.last.characters << Character.where(name: "The Kidnapped Child").take
 Location.where(name: "The Briars").take.events << Event.last
@@ -118,7 +115,6 @@ Event.last.characters << Character.where(name: "The Tin Man").take
 Event.last.characters << Character.where(name: "The Clock").take
 Event.last.characters << Character.where(name: "The Gravedigger").take
 Event.last.characters << Character.where(name: "The Ice Queen").take
-Event.last.characters << Character.where(name: "The Sheriff").take
 Event.last.characters << Character.where(name: "The Vesper").take
 Event.last.characters << Character.where(name: "The Kidnapped Child").take
 Location.where(name: "The Briars").take.events << Event.last
@@ -143,7 +139,6 @@ Event.last.characters << Character.where(name: "The Tin Man").take
 Event.last.characters << Character.where(name: "The Clock").take
 Event.last.characters << Character.where(name: "The Gravedigger").take
 Event.last.characters << Character.where(name: "The Ice Queen").take
-Event.last.characters << Character.where(name: "The Sheriff").take
 Event.last.characters << Character.where(name: "The Vesper").take
 Event.last.characters << Character.where(name: "The Kidnapped Child").take
 Location.where(name: "The Briars").take.events << Event.last

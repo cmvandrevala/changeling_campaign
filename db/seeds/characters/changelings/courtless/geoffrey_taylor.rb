@@ -2,42 +2,55 @@ puts "===> Geoffrey Taylor"
 
 Character.create({
   name: "Geoffrey Taylor",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Cyrus Vandrevala",
+  virtue: "Prudence",
+  vice: "Greed",
+  concept: "Greedy Trader",
+  description: "Geoffrey looks like a slightly older tailor. He does not seem to have much of a mein save a cold wind that sometimes follows him around.",
+  size: 5
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Wizened",
+  kith: "Artist",
+  court: "Courtless",
+  wyrd: 5,
+  clarity: 4
 })
 Character.last.character_attribute = CharacterAttribute.new({
-  intelligence: 2,
-  wits: 3,
-  resolve: 3,
-  strength: 3,
-  dexterity: 3,
-  stamina: 3,
-  presence: 2,
-  manipulation: 1,
-  composure: 2
+  intelligence: 3,
+  wits: 1,
+  resolve: 2,
+  strength: 1,
+  dexterity: 5,
+  stamina: 1,
+  presence: 3,
+  manipulation: 3,
+  composure: 3
 })
 Character.last.character_skill = CharacterSkill.new({
-  academics: 1,
-  computer: 1,
-  crafts: 1,
-  investigation: 1,
-  medicine: 1,
-  occult: 1,
-  politics: 1,
-  science: 1,
-  athletics: 1,
-  brawl: 1,
-  drive: 1,
-  firearms: 1,
-  larceny: 1,
-  stealth: 1,
+  academics: 3,
+  computer: 2,
+  crafts: 5,
+  investigation: 0,
+  medicine: 0,
+  occult: 2,
+  politics: 4,
+  science: 0,
+  athletics: 0,
+  brawl: 0,
+  drive: 0,
+  firearms: 0,
+  larceny: 0,
+  stealth: 3,
   survival: 1,
-  weaponry: 1,
-  animal_ken: 1,
-  empathy: 1,
-  expression: 1,
-  intimidation: 1,
-  persuasion: 1,
+  weaponry: 0,
+  animal_ken: 0,
+  empathy: 2,
+  expression: 2,
+  intimidation: 0,
+  persuasion: 4,
   socialize: 1,
-  streetwise: 1,
-  subterfuge: 1
+  streetwise: 3,
+  subterfuge: 3
 })

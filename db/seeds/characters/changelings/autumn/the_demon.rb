@@ -12,7 +12,7 @@ Character.create({
 })
 Character.last.changeling_template = ChangelingTemplate.new({
   seeming: "Darkling",
-  kith: "Pishacha",
+  kith: "Razorhand",
   court: "Autumn",
   wyrd: 4,
   clarity: 8
