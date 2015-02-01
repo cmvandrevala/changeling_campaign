@@ -2,42 +2,55 @@ puts "===> Charles Harding"
 
 Character.create({
   name: "Charles Harding",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Cyrus Vandrevala",
+  virtue: "Hope",
+  vice: "Wrath",
+  concept: "A Willing Pawn",
+  description: "A large, slender man - just like the legend. He moves in a slow and deliberate way.",
+  size: 6
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Darkling",
+  kith: "Razorhand",
+  court: "Summer",
+  wyrd: 4,
+  clarity: 3
 })
 Character.last.character_attribute = CharacterAttribute.new({
-  intelligence: 3,
-  wits: 3,
-  resolve: 3,
-  strength: 3,
-  dexterity: 3,
-  stamina: 3,
-  presence: 2,
-  manipulation: 2,
-  composure: 2
+  intelligence: 2,
+  wits: 2,
+  resolve: 2,
+  strength: 5,
+  dexterity: 2,
+  stamina: 2,
+  presence: 4,
+  manipulation: 1,
+  composure: 1
 })
 Character.last.character_skill = CharacterSkill.new({
-  academics: 3,
+  academics: 0,
   computer: 0,
   crafts: 0,
-  investigation: 1,
-  medicine: 2,
-  occult: 2,
+  investigation: 3,
+  medicine: 0,
+  occult: 4,
   politics: 3,
-  science: 2,
-  athletics: 2,
-  brawl: 3,
-  drive: 1,
+  science: 0,
+  athletics: 4,
+  brawl: 4,
+  drive: 0,
   firearms: 2,
-  larceny: 1,
-  stealth: 2,
-  survival: 3,
-  weaponry: 2,
-  animal_ken: 1,
+  larceny: 2,
+  stealth: 3,
+  survival: 1,
+  weaponry: 0,
+  animal_ken: 0,
   empathy: 1,
-  expression: 1,
-  intimidation: 1,
-  persuasion: 1,
-  socialize: 1,
-  streetwise: 2,
-  subterfuge: 1
+  expression: 0,
+  intimidation: 3,
+  persuasion: 0,
+  socialize: 2,
+  streetwise: 3,
+  subterfuge: 2
 })
