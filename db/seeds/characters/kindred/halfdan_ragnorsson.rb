@@ -2,5 +2,6 @@ puts "===> Halfdan Ragnorsson"
 
 Character.create({
   name: "Halfdan Ragnorsson",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Tyler Browning"
 })

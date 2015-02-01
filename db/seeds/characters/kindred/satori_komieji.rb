@@ -2,5 +2,6 @@ puts "===> Satori Komieji"
 
 Character.create({
   name: "Satori Komieji",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Tyler Browning"
 })
