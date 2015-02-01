@@ -2,5 +2,6 @@ puts "===> The Storyteller"
 
 Character.create({
   name: "The Storyteller",
-  species: "True Fae"
+  species: "True Fae",
+  player: "Cyrus Vandrevala"
 })
