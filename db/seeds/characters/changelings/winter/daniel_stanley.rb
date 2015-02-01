@@ -2,42 +2,55 @@ puts "===> Daniel Stanley"
 
 Character.create({
   name: "Daniel Stanley",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Cyrus Vandrevala",
+  virtue: "Temperance",
+  vice: "Pride",
+  concept: "Stern Judge",
+  description: "A powerful and imposing man, he looks relatively normal except for dragon-like features accenting his eyes, teeth, and nails.",
+  size: 6
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Fairest",
+  kith: "Draconic",
+  court: "Winter",
+  wyrd: 3,
+  clarity: 7
 })
 Character.last.character_attribute = CharacterAttribute.new({
   intelligence: 2,
   wits: 2,
   resolve: 2,
-  strength: 2,
+  strength: 3,
   dexterity: 2,
   stamina: 2,
   presence: 2,
-  manipulation: 2,
-  composure: 2
+  manipulation: 3,
+  composure: 3
 })
 Character.last.character_skill = CharacterSkill.new({
   academics: 2,
-  computer: 1,
+  computer: 0,
   crafts: 0,
   investigation: 2,
-  medicine: 1,
-  occult: 2,
-  politics: 2,
-  science: 2,
+  medicine: 0,
+  occult: 3,
+  politics: 3,
+  science: 0,
   athletics: 2,
-  brawl: 1,
-  drive: 1,
-  firearms: 1,
-  larceny: 1,
-  stealth: 3,
-  survival: 1,
+  brawl: 3,
+  drive: 0,
+  firearms: 0,
+  larceny: 0,
+  stealth: 2,
+  survival: 2,
   weaponry: 0,
-  animal_ken: 1,
-  empathy: 1,
-  expression: 0,
-  intimidation: 0,
-  persuasion: 1,
-  socialize: 1,
+  animal_ken: 2,
+  empathy: 2,
+  expression: 2,
+  intimidation: 2,
+  persuasion: 3,
+  socialize: 3,
   streetwise: 2,
-  subterfuge: 1
+  subterfuge: 4
 })

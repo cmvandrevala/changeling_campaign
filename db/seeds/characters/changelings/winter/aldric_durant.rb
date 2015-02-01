@@ -2,42 +2,55 @@ puts "===> Aldric Durant"
 
 Character.create({
   name: "Aldric Durant",
-  species: "Changeling"
+  species: "Changeling",
+  player: "Cyrus Vandrevala",
+  virtue: "Fortitude",
+  vice: "Pride",
+  concept: "Winter Monarch",
+  description: "An unassuming man with no traits that really stand out. His entire body and face are devoid of any markings. His face is literally a blank slate (no eyes, no nose, no mouth). This gives him a manequin-like appearance.",
+  size: 5
+})
+Character.last.changeling_template = ChangelingTemplate.new({
+  seeming: "Darkling",
+  kith: "Mirrorskin",
+  court: "Winter",
+  wyrd: 6,
+  clarity: 4
 })
 Character.last.character_attribute = CharacterAttribute.new({
-  intelligence: 2,
-  wits: 4,
-  resolve: 2,
-  strength: 2,
+  intelligence: 3,
+  wits: 3,
+  resolve: 3,
+  strength: 3,
   dexterity: 3,
-  stamina: 2,
-  presence: 4,
-  manipulation: 2,
-  composure: 4
+  stamina: 3,
+  presence: 3,
+  manipulation: 3,
+  composure: 3
 })
 Character.last.character_skill = CharacterSkill.new({
   academics: 3,
-  computer: 2,
-  crafts: 0,
+  computer: 3,
+  crafts: 3,
   investigation: 3,
-  medicine: 2,
-  occult: 2,
-  politics: 4,
-  science: 2,
-  athletics: 2,
-  brawl: 1,
-  drive: 1,
-  firearms: 1,
+  medicine: 3,
+  occult: 3,
+  politics: 3,
+  science: 3,
+  athletics: 3,
+  brawl: 3,
+  drive: 3,
+  firearms: 3,
   larceny: 3,
-  stealth: 4,
-  survival: 2,
+  stealth: 3,
+  survival: 3,
   weaponry: 3,
-  animal_ken: 0,
+  animal_ken: 3,
   empathy: 3,
-  expression: 1,
-  intimidation: 1,
+  expression: 3,
+  intimidation: 3,
   persuasion: 3,
-  socialize: 2,
-  streetwise: 2,
-  subterfuge: 4
+  socialize: 3,
+  streetwise: 3,
+  subterfuge: 3
 })
