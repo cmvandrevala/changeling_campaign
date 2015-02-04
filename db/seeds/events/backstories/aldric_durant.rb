@@ -27,7 +27,7 @@ Location.where(name: "United Kingdom").take.events << Event.last
 Event.create({
   name: "Brave New World",
   date: Date.new(1920,3,14),
-  description: "Aldric and his parents arrive in New York City. They find housing in a predominantly Irish and poor neighborhood."
+  description: "Aldric and his parents arrive in New York City. They find housing in a poor, Irish neighborhood."
 })
 Event.last.characters << Character.where(name: "Aldric Durant").take
 Location.where(name: "New York City").take.events << Event.last
@@ -61,7 +61,7 @@ Location.where(name: "Arcadia").take.events << Event.last
 Event.create({
   name: "Aldric's Escape",
   date: Date.new(1952,7,22),
-  description: "Aldric manages to hide himself in the shadows and escape his keeper."
+  description: "All of Aldric's features have become whited out due to his time in Arcadia. He blends in so well with the wintery background that he manages to evade his Keeper's gaze and escape."
 })
 Event.last.characters << Character.where(name: "Aldric Durant").take
 Event.last.characters << Character.where(name: "The North Wind").take
@@ -75,7 +75,34 @@ Event.create({
 Event.last.characters << Character.where(name: "Aldric Durant").take
 Location.where(name: "New York City").take.events << Event.last
 
+Event.create({
+  name: "The Snowman",
+  date: Date.new(1953,3,21),
+  description: "Aldric murders his fetch in a fit of rage. He has become bitter about how his fetch has taken his life and started a little family. The job is messy though, leaving frost and slush behind."
+})
+Event.last.characters << Character.where(name: "Aldric Durant").take
+Location.where(name: "New York City").take.events << Event.last
 
+Event.create({
+  name: "The Hidden Convict",
+  date: Date.new(1953,3,23),
+  description: "Aldric flees to Anansesem City and finds a hiding place in the docks. He manages to evade the authorities looking for the murderer of his fetch."
+})
+Event.last.characters << Character.where(name: "Aldric Durant").take
+Location.where(name: "Anansesem Docks").take.events << Event.last
 
+Event.create({
+  name: "The Frozen Hollow",
+  date: Date.new(1953,12,25),
+  description: "After months of taking odd jobs and saving what he can, Aldric finally manages to cobble together a hollow of his own. The mortal-facing side of his hollow is located in the southern part of the city."
+})
+Event.last.characters << Character.where(name: "Aldric Durant").take
+Location.where(name: "Anansesem City South Suburbs").take.events << Event.last
 
-
+Event.create({
+  name: "The Lonliness",
+  date: Date.new(1983,12,25),
+  description: "It has been three decades since Aldric has found his hollow. He has lived his life with no excitement, no friends, no purpose. Aldric takes deeper and deeper excursions into the hedge, looking for some meaning in his life."
+})
+Event.last.characters << Character.where(name: "Aldric Durant").take
+Location.where(name: "Anansesem City South Suburbs").take.events << Event.last

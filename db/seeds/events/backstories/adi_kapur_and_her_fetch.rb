@@ -1,4 +1,4 @@
-puts "===> Adi Kapur's Backstory"
+puts "===> Adi Kapur and Her Fetch's Backstories"
 
 Event.create({
   name: "An Unfortunate Fortune",
