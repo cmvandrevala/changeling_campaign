@@ -36,7 +36,7 @@ Character.last.character_skill = CharacterSkill.new({
   medicine: 2,
   occult: 4,
   politics: 2,
-  science: 4,
+  science: 0,
   athletics: 0,
   brawl: 0,
   drive: 0,

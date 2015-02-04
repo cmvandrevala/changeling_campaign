@@ -61,7 +61,7 @@ Location.where(name: "Arcadia").take.events << Event.last
 Event.create({
   name: "In a Flurry of Feathers",
   date: Date.new(1983,11,26),
-  description: "Issac looks his Keeper right in the eye as the crows whirl around him. His Keeper mutters, 'Useless worm' and turns back down to his book as Issac is teleported out of the tower. He finds himself in the Hedge."
+  description: "Issac looks his Keeper right in the eye as the crows whirl around him. His Keeper mutters, 'Useless worm', and turns back down to his book as Issac is teleported out of the tower. Issac finds himself in the Hedge near Anansesem City."
 })
 Event.last.characters << Character.where(name: "Issac Corvi").take
 Event.last.characters << Character.where(name: "Vellum the Studious").take
@@ -70,8 +70,15 @@ Location.where(name: "Arcadia").take.events << Event.last
 Event.create({
   name: "Building a Nest",
   date: Date.new(1983,11,29),
-  description: "With the help of his crow allies, Issac builds a nest in the Hedge. It is reasonably comfortable and a good place to set up a base of operations."
+  description: "With the help of his crow allies, Issac builds a nest in the Hedge. It is reasonably comfortable and a good place for him to stay."
 })
 Event.last.characters << Character.where(name: "Issac Corvi").take
-Event.last.characters << Character.where(name: "Vellum the Studious").take
 Location.where(name: "The Dual Forest").take.events << Event.last
+
+Event.create({
+  name: "Let It Go",
+  date: Date.new(1984,1,9),
+  description: "Issac gets word that his fetch is succeeding in art school on the east coast. He decides to leave his fetch alone and let it live its life peacefully."
+})
+Event.last.characters << Character.where(name: "Issac Corvi").take
+Location.where(name: "The Lacey Fair").take.events << Event.last

@@ -3,7 +3,7 @@ puts "===> Lumi Satala's Backstory"
 Event.create({
   name: "The Silver Spoonette",
   date: Date.new(1994,9,21),
-  description: "Lumi Satala is born to a rich family."
+  description: "Lumi Satala is born to a family of old money."
 })
 Event.last.characters << Character.where(name: "Lumi Satala").take
 Location.where(name: "Door County").take.events << Event.last
@@ -11,7 +11,7 @@ Location.where(name: "Door County").take.events << Event.last
 Event.create({
   name: "The Cheating Scandal",
   date: Date.new(2012,6,23),
-  description: "Lumi is suspended from High School following a major cheating scandal."
+  description: "Lumi is suspended from Stuyvesant High School following a major cheating scandal."
 })
 Event.last.characters << Character.where(name: "Lumi Satala").take
 Location.where(name: "New York City").take.events << Event.last
