@@ -18,8 +18,16 @@ Event.last.characters << Character.where(name: "The False Deity").take
 Location.where(name: "India").take.events << Event.last
 
 Event.create({
+  name: "The Mysterious Orphan",
+  date: Date.new(1979,4,18),
+  description: "A baby in a basket is left in front of the police headquarters in Anansesem city. Nobody knows where the child came from."
+})
+Event.last.characters << Character.where(name: "Adi Kapur (Fetch)").take
+Location.where(name: "Anansesem Police Headquarters").take.events << Event.last
+
+Event.create({
   name: "The Innocuous Knife",
-  date: Date.new(1979,4,10),
+  date: Date.new(1979,5,15),
   description: "The False Deity places a chipped knife with a simple wooden blade under the pillow of the sleeping Adi in Arcadia. It hopes that this will keep the child strong through her brutal durance."
 })
 Event.last.characters << Character.where(name: "Adi Kapur").take
@@ -86,13 +94,21 @@ Event.last.characters << Character.where(name: "Adi Kapur").take
 Location.where(name: "The Front Gates").take.events << Event.last
 
 Event.create({
+  name: "The Dropout",
+  date: Date.new(1995,7,17),
+  description: "Adi's fetch decides not to complete high school. She drops out and finds a job working in retail. She has been searching for some meaning throughout her entire life and decides that school is not the path to her happiness."
+})
+Event.last.characters << Character.where(name: "Adi Kapur (Fetch)").take
+Location.where(name: "Anansesem Shopping District").take.events << Event.last
+
+Event.create({
   name: "Her Second Half",
   date: Date.new(1998,7,30),
   description: "Adi finds her fetch in Anansesem city. At first, the fetch is scared of Adi and is unwilling to believe that she comes in peace. This idea is only exacerbated by her awful appearance."
 })
 Event.last.characters << Character.where(name: "Adi Kapur").take
 Event.last.characters << Character.where(name: "Adi Kapur (Fetch)").take
-Location.where(name: "Anansesem City Public Library").take.events << Event.last
+Location.where(name: "Anansesem Shopping District").take.events << Event.last
 
 Event.create({
   name: "Trust a Friend",
