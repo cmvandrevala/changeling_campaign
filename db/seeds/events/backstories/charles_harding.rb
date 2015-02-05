@@ -53,6 +53,14 @@ Event.last.characters << Character.where(name: "Fredrick Ackerley").take
 Location.where(name: "The Summer Fortress").take.events << Event.last
 
 Event.create({
+  name: "The Slender Man",
+  date: Date.new(1990,1,18),
+  description: "Charles tracks down and murders his fetch. Afterwards, he purposefully lets a few onlookers see his mein from a distance. An urban legend about the slender man begins to circulate."
+})
+Event.last.characters << Character.where(name: "Charles Harding").take
+Location.where(name: "Anansesem City South Suburbs").take.events << Event.last
+
+Event.create({
   name: "The Silencer",
   date: Date.new(1994,7,18),
   description: "After a distinguished career in the special operations unit, Charles is appointed as a special agent by the summer king."
@@ -64,7 +72,7 @@ Location.where(name: "The Summer Fortress").take.events << Event.last
 Event.create({
   name: "A Final Mission",
   date: Date.new(2013,4,12),
-  description: "The summer king asks Charles to complete a major mission for the freehold. A group of changelings who support the original Autumn King are planning to stage a coupe. His job will be to figure out the specific details of their plans and discretely kill them. One of these changelings is named Felix Cato, a known troublemaker in the city."
+  description: "The summer king asks Charles to complete a major mission for the freehold. Word has gotten out that a group of changelings who support the original Autumn King are planning to stage a coupe. His job will be to figure out the specific details of their plans and discretely kill them. One of these changelings is named Felix Cato, a known troublemaker in the city."
 })
 Event.last.characters << Character.where(name: "Charles Harding").take
 Event.last.characters << Character.where(name: "Fredrick Ackerley").take
@@ -74,7 +82,7 @@ Location.where(name: "The Summer Fortress").take.events << Event.last
 Event.create({
   name: "The Surprise Attack",
   date: Date.new(2013,5,22),
-  description: "Charles finds the rogue group of changelings and kills four of the five ringleaders in a brilliant surprise attack. Felix manages to escape the attack."
+  description: "Charles finds a main faction of the rogue group of changelings and kills four of the five ringleaders in a brilliant surprise attack. Felix manages to escape the attack."
 })
 Event.last.characters << Character.where(name: "Charles Harding").take
 Event.last.characters << Character.where(name: "Felix Cato").take
