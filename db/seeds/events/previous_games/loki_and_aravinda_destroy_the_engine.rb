@@ -183,3 +183,11 @@ Event.create({
 })
 Event.last.characters << Character.where(name: "The Jester").take
 Location.where(name: "The World Tree").take.events << Event.last
+
+Event.create({
+  name: "The Execution",
+  date: Date.new(2014,6,21),
+  description: "Charles is executed for his crimes."
+})
+Event.last.characters << Character.where(name: "Charles Harding").take
+Location.where(name: "Anansesem Police Headquarters").take.events << Event.last

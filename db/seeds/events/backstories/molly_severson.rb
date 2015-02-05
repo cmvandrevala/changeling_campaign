@@ -3,7 +3,7 @@ puts "===> Molly Severson's Backstory"
 Event.create({
   name: "A Pretty Child",
   date: Date.new(1989,8,19),
-  description: "A pretty baby girl is born to Richard and Margaret Severson. She is a pudgy bundle of joy."
+  description: "A pretty baby girl is born to Daniel and Margaret Severson. She is a pudgy bundle of joy."
 })
 Event.last.characters << Character.where(name: "Molly Severson").take
 Location.where(name: "New York City").take.events << Event.last
@@ -103,7 +103,7 @@ Location.where(name: "The Hospital").take.events << Event.last
 Event.create({
   name: "New Scrubs",
   date: Date.new(2014,1,12),
-  description: "Molly recovers through her work. However, her obsession with avoiding the lizard brain causes her to shut out all aspects of the Fae world (contracts, magic, etc.). She even goes as far to cover her body from head to toe in a white nurse's uniform in order to prevent anyone from seeing her shameful appearance."
+  description: "Molly recovers through her work. However, her obsession with avoiding the lizard brain causes her to shut out many aspects of the Fae world (contracts, magic, etc.). She even goes as far to cover her body from head to toe in a white nurse's uniform in order to prevent anyone from seeing her shameful appearance."
 })
 Event.last.characters << Character.where(name: "Molly Severson").take
 Location.where(name: "The Hospital").take.events << Event.last
