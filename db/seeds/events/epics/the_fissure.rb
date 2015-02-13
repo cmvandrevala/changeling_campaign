@@ -79,5 +79,12 @@ Location.where(name: "Arcadia").take.events << Event.last
 # Event.last.characters << Character.where(name: "Elizabeth Ward").take
 # Location.where(name: "Anansesem Central Park").take.events << Event.last
 
+Event.create({
+  name: "Amnesty",
+  date: Date.new(2000,1,1),
+  description: "The Winter Monarch proclaims amnesty to all of the changelings who currently have warrants out for their arrest. He comments that there will be a new age of peace in the freehold."
+})
+Event.last.characters << Character.where(name: "Aldric Durant").take
+Location.where(name: "The World Tree").take.events << Event.last
 
 

@@ -122,3 +122,12 @@ Event.last.characters << Character.where(name: "Aldric Durant").take
 Event.last.characters << Character.where(name: "Fredrick Ackerley").take
 Event.last.characters << Character.where(name: "Elizabeth Ward").take
 Location.where(name: "The World Tree").take.events << Event.last
+
+Event.create({
+  name: "The House Arrest",
+  date: Date.new(1992,9,29),
+  description: "The second act of The Jester is arrest Vulpecula - Issac's most trusted adviser - for aiding and abetting a criminal. Vulpecula manages to escape before the guard catches him."
+})
+Event.last.characters << Character.where(name: "The Jester").take
+Event.last.characters << Character.where(name: "Vulpecula").take
+Location.where(name: "The World Tree").take.events << Event.last
