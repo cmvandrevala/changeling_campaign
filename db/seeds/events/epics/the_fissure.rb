@@ -70,21 +70,31 @@ Event.last.characters << Character.where(name: "The Storyteller").take
 Event.last.characters << Character.where(name: "The Zookeeper").take
 Location.where(name: "Arcadia").take.events << Event.last
 
-# Event.create({
-#   name: "The Voice of Reason",
-#   date: Date.new(1995,6,21),
-#   description: "On the day of the Summer Solstice, before the ceremony, an old lady visits the Spring Queen in her boudoir and warns her of the danger of breaking the chain of the seasons. Spring insists that if she must crown Summer, she wants a way to end the ongoing conflict quickly. The Problem Solver teaches her the Goblin Contract: 'Call the Hunt' and tells her to use it "
-# })
-# Event.last.characters << Character.where(name: "The Problem Solver").take
-# Event.last.characters << Character.where(name: "Elizabeth Ward").take
-# Location.where(name: "Anansesem Central Park").take.events << Event.last
+Event.create({
+  name: "The Voice of Reason",
+  date: Date.new(1995,6,21),
+  description: "On the day of the Summer Solstice, before the ceremony, an old lady visits the Spring Queen in her boudoir and warns her of the danger of breaking the chain of the seasons. The Spring Queen recognizes the lady for who she is and is about to turn her away when she offers her anything she wants. Spring insists that if she must crown Summer, she wants a deeper connection to faerie (i.e. more wyrd and more power). The Problem Solver grudgingly gives her a modicum of her own power in exchange for a promise to crown summer."
+})
+Event.last.characters << Character.where(name: "The Problem Solver").take
+Event.last.characters << Character.where(name: "Elizabeth Ward").take
+Location.where(name: "The Spring Palace").take.events << Event.last
 
 Event.create({
   name: "Amnesty",
   date: Date.new(2000,1,1),
-  description: "The Winter Monarch proclaims amnesty to all of the changelings who currently have warrants out for their arrest. He comments that there will be a new age of peace in the freehold."
+  description: "The Winter Monarch proclaims amnesty to all of the changelings who currently have warrants out for their arrest. He comments that there will be a new age of peace in the freehold. However, these words mostly fall upon deaf ears as the two sides continue to bicker."
 })
 Event.last.characters << Character.where(name: "Aldric Durant").take
 Location.where(name: "The World Tree").take.events << Event.last
 
+Event.create({
+  name: "More Numbers",
+  date: Date.new(2003,10,1),
+  description: "The population of the freehold has dropped dramatically. All of the members of The True Trod have abandoned The North Star and have moved on to other places in the hedge. The four leaders know that divided, all of the changelings in the freehold and the hedge alike are in danger. A recruiting war for new changelings from Arcadia begins."
+})
+Event.last.characters << Character.where(name: "The Jester").take
+Event.last.characters << Character.where(name: "Aldric Durant").take
+Event.last.characters << Character.where(name: "Fredrick Ackerley").take
+Event.last.characters << Character.where(name: "Elizabeth Ward").take
+Location.where(name: "The World Tree").take.events << Event.last
 
