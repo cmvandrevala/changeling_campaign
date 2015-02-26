@@ -9,6 +9,14 @@ Event.last.characters << Character.where(name: "Jack Tallow").take
 Location.where(name: "Anansesem City South Suburbs").take.events << Event.last
 
 Event.create({
+  name: "His Little Crush",
+  date: Date.new(1973,2,3),
+  description: "Jack develops a crush on a little red-headed girl named Mary. This blossoms into a wonderful friendship."
+})
+Event.last.characters << Character.where(name: "Jack Tallow").take
+Location.where(name: "Anansesem City South Suburbs").take.events << Event.last
+
+Event.create({
   name: "Track and Field",
   date: Date.new(1986,5,5),
   description: "Jack sets the sprinting record at his high school for the 100 meter dash."
@@ -22,12 +30,22 @@ Event.create({
   description: "Jack Tallow stares off into a fireplace during his first week of college. The flames are seductive, lulling him into a sleepy stupor. All at once, he feels himself tumble forward, falling into a hellish landscape."
 })
 Event.last.characters << Character.where(name: "Jack Tallow").take
+Event.last.characters << Character.where(name: "The False Deity").take
 Location.where(name: "New York City").take.events << Event.last
+
+Event.create({
+  name: "The Wax Candle",
+  date: Date.new(1988,11,23),
+  description: "After weeks of torture, Jack feels his skin and bones becoming waxy. He is continually trying to escape his prison."
+})
+Event.last.characters << Character.where(name: "Jack Tallow").take
+Event.last.characters << Character.where(name: "The False Deity").take
+Location.where(name: "Arcadia").take.events << Event.last
 
 Event.create({
   name: "Clawing His Way Out of Hell",
   date: Date.new(1989,3,27),
   description: "Jack Tallow escapes his keeper and claws his way out of hell. He runs through the thorns of the hedge, coming to the North Star. Although he has been in Arcadia less than a year, it seems like an eternity to him."
 })
-Event.last.characters << Character.where(name: "Issac Corvi").take
+Event.last.characters << Character.where(name: "Jack Tallow").take
 Location.where(name: "The Front Gates").take.events << Event.last
