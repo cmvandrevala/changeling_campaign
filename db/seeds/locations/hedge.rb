@@ -50,11 +50,15 @@ Location.create({
 })
 
 Location.create({
+  name: "The Notley's Hollow",
+  subregion: "",
+  region: "The Hedge",
+  description: "Four changelings, seemingly thrown together by fate, build a hollow on the east side of the freehold."
+})
+
+Location.create({
   name: "The Trod of the Singing Stones",
   subregion: "",
   region: "The Hedge",
   description: "The main east-west running trod that intersects the North Star. It is said that if you listen patiently, singing stones will guide you to your destination. However, most people are in too much of a hurry to even notice their tiny voices."
 })
-
-
-

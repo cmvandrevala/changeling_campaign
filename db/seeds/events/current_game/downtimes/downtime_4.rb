@@ -19,8 +19,17 @@ Event.last.characters << Character.where(name: "The Demon").take
 Location.where(name: "Dreamscape").take.events << Event.last
 
 Event.create({
+  name: "Val No More",
+  date: Date.new(2014,03,26),
+  description: "Val has spent the better part of the week trying to figure out how he can get past any traps in Issac's dream. He knows that the freehold will have taken extra precautions to keep him out. The Problem Solver visits him in a dream and offers to take his name. He knows the repurcusions of losing one's name, but agrees to do it anyway in order to save his friend."
+})
+Event.last.characters << Character.where(name: "The Problem Solver").take
+Event.last.characters << Character.where(name: "Vulpecula").take
+Location.where(name: "Dreamscape").take.events << Event.last
+
+Event.create({
   name: "The Nightmare",
-  date: Date.new(2014,3,28),
+  date: Date.new(2014,3,27),
   description: "Without actually meaning to, Lumi drives her fetch mentally insane."
 })
 Event.last.characters << Character.where(name: "Lumi Satala").take
