@@ -100,7 +100,7 @@ Location.where(name: "The World Tree").take.events << Event.last
 
 Event.create({
   name: "A Powder Keg",
-  date: Date.new(2014,12,31),
+  date: Date.new(2012,12,31),
   description: "The two sides have each amassed a great amount of support. The four leaders realize that if something is not done soon, the changelings in Anansesem City will go to war and tear each other apart."
 })
 Event.last.characters << Character.where(name: "The Jester").take
