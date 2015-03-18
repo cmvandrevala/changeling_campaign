@@ -1,0 +1,15 @@
+// Place all the styles related to the InteractiveCharts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.axis {
+	fill: none;
+	stroke: grey;
+	stroke-width: 10;
+	shape-rendering: crispEdges;
+}
+
+.timeline-css {
+	width: 600;
+	margin: 0 auto 0 auto;
+}

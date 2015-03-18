@@ -12,6 +12,7 @@ gem 'jbuilder'
 gem 'sprockets-rails'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
+gem 'd3-rails'
 
 group :development do
   gem 'spring'
