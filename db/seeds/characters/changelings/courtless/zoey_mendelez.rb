@@ -7,7 +7,7 @@ Character.create({
   virtue: "Charity",
   vice: "Lust",
   concept: "Arm Candy for Hire",
-  description: "A beautiful young lady that seems to exude sex. She has a shapely, classical figure, raven black hair, deep red lips, and brilliant blue eyes.",
+  description: "A beautiful young lady that seems to exude sex. She has a shapely, classical figure, raven black hair, deep red lips, and brilliant blue eyes. However, if the light of the sun hits her face, you will see a horrendous maw of a mouth that extends from ear to ear.",
   size: 5
 })
 Character.last.changeling_template = ChangelingTemplate.new({
