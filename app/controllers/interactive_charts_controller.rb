@@ -6,7 +6,7 @@ class InteractiveChartsController < ApplicationController
   def event_data
     data = []
     Event.all.each do |event|
-      data << [event.location.id, event.id]
+      data << [event.location.id, event.date.to_s]
     end
     respond_to do |format|
       format.json {
