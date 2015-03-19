@@ -5,11 +5,17 @@
 .axis {
 	fill: none;
 	stroke: grey;
-	stroke-width: 10;
+	stroke-width: 1;
 	shape-rendering: crispEdges;
 }
 
-.timeline-css {
-	width: 600;
+.timeline-graph {
+	width: 800;
 	margin: 0 auto 0 auto;
+}
+
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 1.5px;
 }

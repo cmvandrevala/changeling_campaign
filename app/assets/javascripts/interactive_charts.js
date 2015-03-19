@@ -3,6 +3,7 @@
 // You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).ready(function() {
+
 	$('#timeline-button').on('click', function () {
 		$.ajax({
 		   type: "GET",
@@ -13,26 +14,26 @@ $(document).ready(function() {
 		   error: function(result) { error() }
 		})
 	});
+
 });
 
 function error() { console.log("There was an error...") };
 
 function draw_timeline(data) {
 
-	var format = d3.time.format("%Y-%m-%d").parse;
-	var xmax = 0;
+	var minDate = new Date(2013,1,1);
+	var maxDate = new Date(2014,12,31);
 
+    var margin = {top: 20, right: 20, bottom: 20, left: 20};
+	var width = 600 - margin.left - margin.right;
+ 	var height = 1000 - margin.top - margin.bottom;
+
+	var xmax = 0;
 	for(var i = 0; i < data.length; i++) {
 		if (xmax < data[i][0]) {
 			xmax = data[i][0];
 		};
 	}
-
-	var minDate = new Date(1870,1,1);
-	var maxDate = new Date(2014,12,31);
-
-	var width = 600;
- 	var height = 1000;
 
  	var x = d3.scale.linear().range([0, width]).domain([0,xmax]);
  	var y = d3.time.scale().range([height, 0]).domain([maxDate,minDate]);
@@ -40,13 +41,21 @@ function draw_timeline(data) {
 	var xAxis = d3.svg.axis().scale(x).orient("bottom");
 	var yAxis = d3.svg.axis().scale(y).orient("left");
 
-	var chart = d3.select("#timeline-graph").attr("width", width).attr("height", height);
+	var line = d3.svg.line().interpolate("linear")
+	    .x(function(d) { return x(d[0]); })
+	    .y(function(d) { return y(new Date(d[1])); });
+
+	var chart = d3.select("#timeline-graph")
+		          .attr("width", width + margin.left + margin.right)
+		          .attr("height", height + margin.top + margin.bottom)
+		          .append("g")
+		          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 	chart.selectAll("dot")
 	     .data(data)
 	     .enter()
 	     .append("circle")
-	     .attr("r", 3.5)
+	     .attr("r", 2)
 	     .attr("cx", function(d) { return x(d[0]); } )
 	     .attr("cy", function(d) { return y(new Date(d[1])); });
 
@@ -59,10 +68,12 @@ function draw_timeline(data) {
 		 .attr("class", "y axis")
 		 .call(yAxis);
 
-		 console.log("Successfully drew graph using:")
-	 	for(var i = 0; i < data.length; i++) {
-			console.log(data[i][0] + ", " + data[i][1]);
-	 	}
+     chart.append("path")
+         .datum(data)
+         .attr("class", "line")
+         .attr("d", line);
+
+	 console.log("Successfully drew graph using:")
 };
 
 

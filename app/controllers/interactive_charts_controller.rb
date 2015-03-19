@@ -5,12 +5,18 @@ class InteractiveChartsController < ApplicationController
 
   def event_data
     data = []
+    character = "Loki"
     Event.all.each do |event|
-      data << [event.location.id, event.date.to_s]
+      chars = []
+      event.characters.each do |char|
+        chars << char.name
+      end
+      data << [event.location.id, event.date.to_s] if chars.include? character
     end
+    sorted_data = data.sort_by{ |k| k[1] }
     respond_to do |format|
       format.json {
-        render :json => data
+        render :json => sorted_data
       }
     end
   end
