@@ -4,9 +4,13 @@ class InteractiveChartsController < ApplicationController
   end
 
   def event_data
+    data = []
+    Event.all.each do |event|
+      data << [event.location.id, event.id]
+    end
     respond_to do |format|
       format.json {
-        render :json => [[100,20],[300,40],[500,60]]
+        render :json => data
       }
     end
   end

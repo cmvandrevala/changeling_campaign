@@ -19,11 +19,25 @@ function error() { console.log("There was an error...") };
 
 function draw_timeline(data) {
 
+	var xmax = 0;
+	var ymax = 0;
+
+	for(var i = 0; i < data.length; i++) {
+		if (xmax < data[i][0]) {
+			xmax = data[i][0];
+		};
+		if (ymax < data[i][1]) {
+			ymax = data[i][1];
+		};
+	}
+
+	console.log(xmax + " " + ymax)
+
 	var width = 600;
  	var height = 1000;
 
- 	var x = d3.scale.linear().range([0, width]);
- 	var y = d3.scale.linear().range([height, 0]);
+ 	var x = d3.scale.linear().range([0, width]).domain([0,xmax]);
+ 	var y = d3.scale.linear().range([height, 0]).domain([ymax,0]);
 
 	var xAxis = d3.svg.axis().scale(x).orient("bottom");
 	var yAxis = d3.svg.axis().scale(y).orient("left");
@@ -35,8 +49,8 @@ function draw_timeline(data) {
 	     .enter()
 	     .append("circle")
 	     .attr("r", 3.5)
-	     .attr("cx", function(d) { return d[0]; } )
-	     .attr("cy", function(d) { return d[1]; });
+	     .attr("cx", function(d) { return x(d[0]); } )
+	     .attr("cy", function(d) { return y(d[1]); });
 
     chart.append("g")
          .attr("class", "x axis")
