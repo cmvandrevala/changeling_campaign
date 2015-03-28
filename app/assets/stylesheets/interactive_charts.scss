@@ -9,13 +9,18 @@
 	shape-rendering: crispEdges;
 }
 
-.timeline-graph {
-	width: 800;
-	margin: 0 auto 0 auto;
-}
-
 .line {
 	fill: none;
 	stroke: steelblue;
 	stroke-width: 1.5px;
+}
+
+svg {
+	width: 80%;
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+#centered-button {
+	text-align: center;
 }

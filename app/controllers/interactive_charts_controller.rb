@@ -5,7 +5,7 @@ class InteractiveChartsController < ApplicationController
 
   def event_data
     data = []
-    character = "Loki"
+    character = "Nola MacNamara"
     Event.all.each do |event|
       chars = []
       event.characters.each do |char|

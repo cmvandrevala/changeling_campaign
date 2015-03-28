@@ -24,9 +24,9 @@ function draw_timeline(data) {
 	var minDate = new Date(2013,1,1);
 	var maxDate = new Date(2014,12,31);
 
-    var margin = {top: 20, right: 20, bottom: 20, left: 20};
-	var width = 600 - margin.left - margin.right;
- 	var height = 1000 - margin.top - margin.bottom;
+    var margin = {top: 40, right: 100, bottom: 100, left: 100};
+	var width = $("#timeline-graph").width() - margin.left - margin.right;
+ 	var height = 1200 - margin.top - margin.bottom;
 
 	var xmax = 0;
 	for(var i = 0; i < data.length; i++) {
