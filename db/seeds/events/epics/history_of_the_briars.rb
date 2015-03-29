@@ -25,7 +25,7 @@ Event.last.characters << Character.where(name: "The Kidnapped Child").take
 Location.where(name: "The Briars").take.events << Event.last
 
 Event.create({
-  name: "Some New Tenents",
+  name: "New Tenents",
   date: Date.new(1965,8,29),
   description: "A traveling group of changelings finds The Briars. They decide to make it their home in the Hedge, not knowing its origins. They have full names and identities that will soon be lost."
 })
