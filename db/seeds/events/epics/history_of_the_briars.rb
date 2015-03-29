@@ -25,8 +25,8 @@ Event.last.characters << Character.where(name: "The Kidnapped Child").take
 Location.where(name: "The Briars").take.events << Event.last
 
 Event.create({
-  name: "New Tenents",
-  date: Date.new(1965,8,30),
+  name: "Some New Tenents",
+  date: Date.new(1965,8,29),
   description: "A traveling group of changelings finds The Briars. They decide to make it their home in the Hedge, not knowing its origins. They have full names and identities that will soon be lost."
 })
 Event.last.characters << Character.where(name: "The Dancer").take
@@ -48,7 +48,7 @@ Event.last.characters << Character.where(name: "The Vesper").take
 Location.where(name: "The Briars").take.events << Event.last
 
 Event.create({
-  name: "The Dream",
+  name: "The Dream of a Young Girl",
   date: Date.new(1965,8,31),
   description: "The changelings in their new home all have a vivid dream. A lonely young girl with intense hair tells them that she was forced to leave this wonderful place. She wishes them the best and wants them to take good care of it until she can return. Most of the changelings are inspired by her words and feel right at home. The leader of the town, however, is not fooled."
 })
