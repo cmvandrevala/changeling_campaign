@@ -54,10 +54,6 @@ describe "Events" do
       expect(page).to have_content "Some long description."
     end
 
-    xit "has the associated character names" do
-      expect(page).to have_content "Bob"
-    end
-
   end
 
   describe "#show" do
