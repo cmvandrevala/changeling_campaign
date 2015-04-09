@@ -15,6 +15,8 @@ $(document).on('page:load', function() {
 		})
 	});
 
+	$('#timeline-button').trigger('click');
+
 });
 
 function error() { console.log("There was an error...") };

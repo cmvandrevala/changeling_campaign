@@ -1,3 +1,36 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$light-green: #1FA052;
+
+html, body {
+	height: 100%;
+	background-color: #E8E8E8;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+.navbar {
+	padding: 5px;
+    font-family: Garamond;
+}
+
+a {
+	color: $light-green;
+}
+
+p {
+	font-size: 34px;
+}
+
+i {
+	font-size: 100px;
+}
+
+.main-brand {
+	font-size: 32px;
+}
+
+.main-content {
+	padding: 20px;
+}

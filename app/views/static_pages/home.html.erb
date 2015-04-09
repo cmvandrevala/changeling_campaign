@@ -1,8 +1,22 @@
 <% provide(:title, 'History of Anansesem City')%>
 
-<h1>The History of Anansesem City</h1>
-
-<p><%= link_to "Index of Events", events_path %></p>
-<p><%= link_to "Index of Characters", characters_path %></p>
-<p><%= link_to "Index of Locations", locations_path %></p>
-<p><%= link_to "Interactive Timeline", interactive_charts_path %></p>
+<div class="container">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-3 col-xs-12 text-center first-option">
+        <h1>
+			<%= link_to characters_path do %>
+				<i class="glyphicon glyphicon-user"></i>
+				<p>Characters</p>
+			<% end %>
+		</h1>
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-3 col-xs-12 text-center second-option">
+        <h1>
+			<%= link_to interactive_charts_path do %>
+				<i class="glyphicon glyphicon-stats"></i>
+				<p>Timeline</p>
+			<% end %>
+		</h1>
+    </div>
+</div>
