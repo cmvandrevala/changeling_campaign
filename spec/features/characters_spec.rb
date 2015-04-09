@@ -34,6 +34,11 @@ describe "Characters" do
       expect(page).to have_content "Changeling"
     end
 
+    it "links to a character show page" do
+      click_link "Bob"
+      expect(page).to have_title "Character"
+    end
+
   end
 
   describe "#show" do
@@ -46,8 +51,12 @@ describe "Characters" do
       expect(page).to have_title "Character"
     end
 
-    it "has the header 'Character'" do
-      expect(page).to have_content "Character"
+    it "has the character name as a header" do
+      expect(page).to have_content "Bob"
+    end
+
+    it "has the character species" do
+      expect(page).to have_content "Changeling"
     end
 
   end
