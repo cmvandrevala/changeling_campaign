@@ -18,6 +18,22 @@ describe "Characters" do
       expect(page).to have_content "Character Index"
     end
 
+    it "has the table header 'Name'" do
+      expect(page).to have_content "Name"
+    end
+
+    it "has the table header 'Species'" do
+      expect(page).to have_content "Species"
+    end
+
+    it "has a table of character names" do
+      expect(page).to have_content "Bob"
+    end
+
+    it "has a table of character species" do
+      expect(page).to have_content "Changeling"
+    end
+
   end
 
   describe "#show" do
