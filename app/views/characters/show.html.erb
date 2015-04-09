@@ -1,4 +1,83 @@
 <% provide(:title, 'Character')%>
 
-<p><%= @character.name %></p>
-<p><%= @character.species %></p>
+<h1 class="text-center"><%= @character.name %></h1>
+<h2 class="text-center"><%= @character.species %></h2>
+
+<% if @character.character_attribute %>
+	<div class="container">
+		<div class="row">
+			<h3>Attributes</h3>
+		</div>
+		<div class="row">
+			<div class="col-xs-4">
+				<ul>
+					<li>Intelligence: <%= @character.character_attribute.intelligence %></li>
+					<li>Wits: <%= @character.character_attribute.wits %></li>
+					<li>Resolve: <%= @character.character_attribute.resolve %></li>
+				</ul>
+			</div>
+			<div class="col-xs-4">
+				<ul>
+					<li>Strength: <%= @character.character_attribute.strength %></li>
+					<li>Dexterity: <%= @character.character_attribute.dexterity %></li>
+					<li>Stamina: <%= @character.character_attribute.stamina %></li>
+				</ul>
+			</div>
+			<div class="col-xs-4">
+				<ul>
+					<li>Presence: <%= @character.character_attribute.presence %></li>
+					<li>Manipulation: <%= @character.character_attribute.manipulation %></li>
+					<li>Composure: <%= @character.character_attribute.composure %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<% end %>
+
+<% if @character.character_skill %>
+<div class="container">
+	<div class="row">
+		<h3>Skills</h3>
+		<div class="col-xs-4">
+			<h4>Mental</h4>
+			<ul>
+				<li>Academics: <%= @character.character_skill.academics %></li>
+				<li>Computer: <%= @character.character_skill.computer %></li>
+				<li>Crafts: <%= @character.character_skill.crafts %></li>
+				<li>Investigation: <%= @character.character_skill.investigation %></li>
+				<li>Medicine: <%= @character.character_skill.medicine %></li>
+				<li>Occult: <%= @character.character_skill.occult %></li>
+				<li>Politics: <%= @character.character_skill.politics %></li>
+				<li>Science: <%= @character.character_skill.science %></li>
+			</ul>
+		</div>
+		<div class="col-xs-4">
+			<h4>Physical</h4>
+			<ul>
+				<li>Athletics: <%= @character.character_skill.athletics %></li>
+				<li>Brawl: <%= @character.character_skill.brawl %></li>
+				<li>Drive: <%= @character.character_skill.drive %></li>
+				<li>Firearems: <%= @character.character_skill.firearms %></li>
+				<li>Larceny: <%= @character.character_skill.larceny %></li>
+				<li>Stealth: <%= @character.character_skill.stealth %></li>
+				<li>Survival: <%= @character.character_skill.survival %></li>
+				<li>Weaponry: <%= @character.character_skill.weaponry %></li>
+			</ul>
+		</div>
+		<div class="col-xs-4">
+			<h4>Social</h4>
+			<ul>
+				<li>Animal Ken: <%= @character.character_skill.animal_ken %></li>
+				<li>Empathy: <%= @character.character_skill.empathy %></li>
+				<li>Expression: <%= @character.character_skill.expression %></li>
+				<li>Intimidation: <%= @character.character_skill.intimidation %></li>
+				<li>Persuasion: <%= @character.character_skill.persuasion %></li>
+				<li>Socialize: <%= @character.character_skill.socialize %></li>
+				<li>Streetwise: <%= @character.character_skill.streetwise %></li>
+				<li>Subterfuge: <%= @character.character_skill.subterfuge %></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<% end %>
+
