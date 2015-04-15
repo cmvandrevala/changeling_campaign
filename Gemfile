@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.3'
+ruby '2.2.2'
 
 gem 'rails'
 gem 'pg'
@@ -28,6 +28,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'guard-rails'
+  gem 'jasmine'
   gem 'childprocess'
 end
 

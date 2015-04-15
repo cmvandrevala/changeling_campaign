@@ -19,14 +19,16 @@ $(document).on('page:load', function() {
 
 });
 
-function error() { console.log("There was an error...") };
+function error() {
+	throw new Error("There was an error drawing the interactive chart.");
+};
 
 function draw_timeline(data) {
 
 	var minDate = new Date(2013,1,1);
 	var maxDate = new Date(2014,12,31);
 
-    var margin = {top: 40, right: 100, bottom: 100, left: 100};
+  var margin = {top: 40, right: 100, bottom: 100, left: 100};
 	var width = $("#timeline-graph").width() - margin.left - margin.right;
  	var height = 1200 - margin.top - margin.bottom;
 
@@ -77,5 +79,3 @@ function draw_timeline(data) {
 
 	 console.log("Successfully drew graph using:")
 };
-
-
