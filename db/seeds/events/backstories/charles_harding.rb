@@ -37,7 +37,7 @@ Location.where(name: "Arcadia").take.events << Event.last
 
 Event.create({
   name: "The Newcomer",
-  date: Date.new(1985,10,18),
+  date: Date.new(1987,10,18),
   description: "After days of walking through the hedge, Charles finds the North Star."
 })
 Event.last.characters << Character.where(name: "Charles Harding").take
@@ -45,7 +45,7 @@ Location.where(name: "The Front Gates").take.events << Event.last
 
 Event.create({
   name: "The Specialist",
-  date: Date.new(1986,11,18),
+  date: Date.new(1988,11,18),
   description: "After a year of courting summer, Charles is appointed to a special operations unit by the king of summer."
 })
 Event.last.characters << Character.where(name: "Charles Harding").take

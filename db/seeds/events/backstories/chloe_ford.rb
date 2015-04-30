@@ -86,12 +86,3 @@ Event.last.characters << Character.where(name: "Felix Cato").take
 Event.last.characters << Character.where(name: "Liliana Hartley").take
 Location.where(name: "Anansesem Forest Preserve").take.events << Event.last
 
-
-
-
-
-
-
-
-
-
