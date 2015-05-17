@@ -22,6 +22,15 @@ Event.last.characters << Character.where(name: "Neithan").take
 Location.where(name: "The Lacey Fair").take.events << Event.last
 
 Event.create({
+  name: "Release",
+  date: Date.new(2014,04,19),
+  description: "Due to the increased political pressure on the leaders of the freehold, Liliana and Felix are released from prison."
+})
+Event.last.characters << Character.where(name: "Liliana Hartley").take
+Event.last.characters << Character.where(name: "Felix Cato").take
+Location.where(name: "The Spring Palace").take.events << Event.last
+
+Event.create({
   name: "The Recital",
   date: Date.new(2014,04,20),
   description: "Johannas performs at a music festival in spring. Although he is a little awkward with his magic, his performace does draw the attention of Master Owen."
